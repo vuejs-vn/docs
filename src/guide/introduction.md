@@ -76,13 +76,15 @@ Vue là một framework và hệ sinh thái của nó bao gồm hầu như đầ
 
 Nếu bạn thấy những khái niệm này đáng sợ, đừng lo lắng! Phần hướng dẫn và chỉ dẫn này chỉ yêu cầu kiến thức cơ bản về HTML và JavaScript và bạn sẽ có thể làm theo mà không cần phải là chuyên gia về bất kỳ thứ nào trong số này.
 
-Nếu bạn là một developer có kinh nghiệm quan tâm đến cách tích hợp tốt nhất Vue vào stack của mình hoặc bạn tò mò về ý nghĩa của các thuật ngữ này, chúng tôi sẽ thảo luận chi tiết hơn về chúng trong [Cách sử dụng Vue] (/guide/extras/ways-of-using-vue).
+Nếu bạn là một developer có kinh nghiệm, quan tâm đến cách tích hợp tốt nhất Vue vào stack của mình hoặc bạn tò mò về ý nghĩa của các thuật ngữ này, chúng tôi sẽ thảo luận chi tiết hơn về chúng trong [Cách sử dụng Vue](/guide/extras/ways-of-using-vue).
 
-Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The Progressive Framework": it's a framework that can grow with you and adapt to your needs.
+Bất chấp tính linh hoạt, kiến thức cốt lõi về cách Vue hoạt động áp dụng được cho tất cả các trường hợp trên. Ngay cả khi bạn chỉ là người mới bắt đầu, kiến thức thu được trong quá học này sẽ vẫn hữu ích khi bạn thực hiện các mục tiêu tham vọng hơn trong tương lai. Nếu bạn đã có nhiều kinh nghiệm, bạn có thể chọn cách tối ưu để tận dụng Vue dựa trên các vấn đề bạn đang cố gắng giải quyết, trong khi vẫn giữ nguyên năng suất. Đây là lý do tại sao chúng tôi gọi Vue là "framework Cấp Tiến": đó là một framework có thể phát triển cùng với bạn và thích ứng với nhu cầu của bạn.
 
 ## Single-File Components
 
 In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called **Single-File Component** (also known as `*.vue` files, abbreviated as **SFC**). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:
+
+Trong hầu hếu những dự án Vue có dùng build-tool, chúng tôi tạo ra những component sử dụng định dạng giống với HTML gọi là **Single-File Component** (còn được biết đến là các file `*.vue`, viết tắt là **SFC**). Một SFC, như tên của nó, đóng gói các thành phần của một component như logic (JavaScript), template (HTML), và style (CSS) trong một file duy nhất. Hãy viết lại ví dụ phía trên theo kiểu SFC:
 
 ```vue
 <script>
