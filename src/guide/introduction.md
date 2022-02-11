@@ -2,19 +2,21 @@
 footer: false
 ---
 
-# Introduction
+# Giới Thiệu
 
-:::info You are reading the documentation for Vue 3!
+:::info Bạn đang đọc tài liệu cho Vue 3!
 
-- Vue 2 documentation has been moved to [v2.vuejs.org](https://v2.vuejs.org/).
-- Upgrading from Vue 2? Check out the [Migration Guide](https://v3-migration.vuejs.org/).
+- Tài liệu của Vue 2 đã được chuyển về trang [v2.vuejs.org](https://v2.vuejs.org/).
+- Xem hướng dẫn nâng cấp từ Vue 2: [Hướng dẫn nâng cấp](https://v3-migration.vuejs.org/).
   :::
 
-## What is Vue?
+## Vue là gì?
 
-Vue (pronounced /vjuː/, like **view**) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.
+Vue (phát âm: /vjuː/, giống **view**) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.
 
-Here is a minimal example:
+Vue (phát âm: /vjuː/, giống **view**) là một JavaScript framework dùng để xây dựng giao diện người dùng. Nó được xây dựng trên nền tảng HTML, CSS và JavaScript, cung cấp mô hình lập trình declarative và component-based, giúp bạn phát triển giao diện người dùng một cách hiệu quả hơn, dù nó đơn giản hay phức tạp.
+
+Đây là một ví dụ nhỏ:
 
 ```js
 import { createApp } from 'vue'
@@ -36,7 +38,7 @@ createApp({
 </div>
 ```
 
-**Result**
+**Kết quả**
 
 <script setup>
 import { ref } from 'vue'
@@ -49,32 +51,32 @@ const count = ref(0)
   </button>
 </div>
 
-The above example demonstrates the two core features of Vue:
+Ví dụ phía trên thể hiện hai tính năng của Vue:
 
-- **Declarative Rendering**: Vue extends standard HTML with a template syntax that allows us to declaratively describe HTML output based on JavaScript state.
+- **Declarative Rendering**: Vue sử dụng HTML để làm template, đồng thời mở rộng nó để cho phép chúng ta mô tả HTML dựa trên trạng thái của (biến, variable) JavaScript.
 
-- **Reactivity**: Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happen.
+- **Reactivity**: Vue tự động theo dõi sự thay đổi của các giá trị trong JavaScript và cập nhật DOM một cách hiệu.
 
-You may already have questions - don't worry. We will cover every little detail in the rest of the documentation. For now, please read along so you can have a high-level understanding of what Vue offers.
+Có thể bạn đang có nhiều thắc mắc - đừng lo. Chúng tôi sẽ giải thích một cách rất chi tiết trong phần còn lại của tài liệu. Còn bây giờ, hãy cứ tiếp tục đọc để có một cái nhìn tổng quan về những gì Vue cung cấp.
 
-:::tip Prerequisites
-The rest of the documentation assumes basic familiarity with HTML, CSS and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics then come back! Prior experience with other frameworks helps, but is not required.
+:::tip Yêu cầu
+Phần còn lại của tài liệu đòi hỏi một số kinh nghiệm với HTML, CSS và JavaScript. Nếu bạn hoàn toàn chưa có kinh nghiệm gì với frontend, thì việc tìm hiểu ngay một framework không phải là lựa chọn tốt nhất lúc này - hãy tìm hiểu các kiến thức cơ bản trước rồi quay lại! Kinh nghiệm với các framework khác có thể sẽ hữu ích, nhưng không bắt buộc.
 :::
 
-## The Progressive Framework
+## Một Framework Cấp Tiến
 
-Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in different ways:
+Vue là một framework và hệ sinh thái của nó bao gồm hầu như đầy đủ các các tính năng cần thiết trong quá trình phát triển frontend. Nhưng môi trường web thì cực kì đa dạng - những thứ chúng ta xây dựng trên web có thể khác nhau một cách đáng kể về hình thức và quy mô. Với suy nghĩ đó, Vue được thiết kế để trở nên linh hoạt và có thể áp dụng từng phần (dần dần). Tùy thuộc vào từng trường hợp, Vue có thể được sử dụng theo những cách khác nhau:
 
-- Enhancing static HTML without a build step
-- Embedding as Web Components on any page
+- Cải thiện HTML tĩnh mà không cần build
+- Nhúng vào page như là một Web Component
 - Single-Page Application (SPA)
 - Fullstack / Server-Side-Rendering (SSR)
 - JAMStack / Static-Site-Generation (SSG)
-- Targeting desktop, mobile, WebGL or even the terminal
+- Xây dựng ứng dụng desktop, mobile, WebGL hoặc thậm chí là terminal
 
-If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and JavaScript knowledge, and you should be able to follow along without being an expert in any of these.
+Nếu bạn thấy những khái niệm này đáng sợ, đừng lo lắng! Phần hướng dẫn và chỉ dẫn này chỉ yêu cầu kiến thức cơ bản về HTML và JavaScript và bạn sẽ có thể làm theo mà không cần phải là chuyên gia về bất kỳ thứ nào trong số này.
 
-If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious about what these terms mean, we discuss them in more details in [Ways of Using Vue](/guide/extras/ways-of-using-vue).
+Nếu bạn là một developer có kinh nghiệm quan tâm đến cách tích hợp tốt nhất Vue vào stack của mình hoặc bạn tò mò về ý nghĩa của các thuật ngữ này, chúng tôi sẽ thảo luận chi tiết hơn về chúng trong [Cách sử dụng Vue] (/guide/extras/ways-of-using-vue).
 
 Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The Progressive Framework": it's a framework that can grow with you and adapt to your needs.
 
