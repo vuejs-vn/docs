@@ -11,7 +11,7 @@ import SponsorsGroup from './SponsorsGroup.vue';
       <span class="accent">Linh Động</span>
     </h1>
     <p class="description">
-      Một framework gần gũi, mạnh mẽ và linh hoạt để xây đụng giao diện web.
+      Một framework gần gũi, mạnh mẽ và linh hoạt để xây dựng giao diện người dùng web.
     </p>
     <p class="actions">
       <a class="get-started" href="/guide/introduction.html">
