@@ -57,15 +57,15 @@ import SponsorsGroup from './SponsorsGroup.vue';
       </p>
     </div>
     <div class="vt-box">
-      <h2>Mạnh mẻ</h2>
+      <h2>Mạnh mẽ</h2>
       <p>
-        Thật sự reactive, trình biên được tối ưu để render hệ thống mà hiếm khi cần tới tối ưu hóa thủ công.
+        Thật sự reactive, trình biên dịch được tối ưu để render hệ thống mà hiếm khi cần tới tối ưu hóa thủ công.
       </p>
     </div>
     <div class="vt-box">
       <h2>Đa năng</h2>
       <p>
-        Một hệ sinh thái linh hoạt với cách thành phần từ cư bản đến nâng cao, từ một thư viện đơn giản đến một framework đầy đủ tính năng.
+        Một hệ sinh thái linh hoạt với các thành phần từ cơ bản đến nâng cao, từ một thư viện đơn giản đến một framework đầy đủ tính năng.
       </p>
     </div>
   </section>
