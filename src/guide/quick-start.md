@@ -2,43 +2,47 @@
 footer: false
 ---
 
-# Quick Start
+<!-- # Quick Start -->
 
-Depending on your use case and preference, you can use Vue with or without a build step.
+# Bắt đầu
 
-## With Build Tools
+Tùy thuộc vào trường hợp bạn sử dụng và sở thích của bạn, bạn có thể sử dụng Vue bằng cách sử dụng công cụ để tạo dự án hoặc dùng dường dẫn thư viện trực tiếp.
 
-A build setup allows us to use Vue [Single-File Components](/guide/scaling-up/sfc) (SFCs). The official Vue build setup is based on [Vite](https://vitejs.dev), a frontend build tool that is modern, lightweight and extremely fast.
+## Sử dụng công cụ hỗ trợ để tạo dự án
 
-### Online
+Là một công cụ cho phép xây dựng dự án bằng Vue dưới dạng [Single-File Components](/guide/scaling-up/sfc) (SFCs). Công cụ xây dựng dự án bằng Vue dựa trên [Vite](https://vitejs.dev) - một công cụ xây dựng dự án web ở phía người dùng hiện đại, nhẹ nhàng và cực kỳ nhanh chóng.
+
+### Trực tuyến
 
 You can try Vue with SFCs online on [StackBlitz](https://vite.new/vue). StackBlitz runs the Vite-based build setup directly in the browser, so it is almost identical to the local setup but doesn't require installing anything on your machine.
 
-### Local
+Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại [StackBlitz](https://vite.new/vue). StackBlitz sẽ xây dựng những thiết Vite-based trực tiếp trên trình duyệt, vì vậy nó gần giống như bạn thực hiện trên máy tính mình mà không cần phải cài đặt thêm bất cứ gì.
+### Local (Máy tính cá nhân)
 
-:::tip Pre-requisites
+:::tip Diều kiện tiên quyết
 
-- Familiarity with the command line
-- Install [Node.js](https://nodejs.org/)
+- Đã quen với việc sử dụng cửa sổ dòng lệnh
+- Đã cài đặt [Node.js](https://nodejs.org/)
   :::
 
-To create a build-tool-enabled Vue project on your machine, run the following command in your command line (without the `>` sign):
+Để khởi tạo một dự án bằng Vue trên máy tính của bạn, vui lòng nhập dòng lệnh phía dưới (không có dấu `>` ở phía trước câu lệnh):
+
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt;</span> <span style="color:#A6ACCD;">npm init vue@latest</span></span></code></pre></div>
 
-This command will install and execute [create-vue](https://github.com/vuejs/create-vue), the official Vue project scaffolding tool. You will be presented with prompts for a number of optional features such as TypeScript and testing support:
+Lệnh này sẽ cài đặt và thực thi lệnh [create-vue](https://github.com/vuejs/create-vue) - một công cụ để tạo khuôn mẫu thư mục chính thức cho dự án sử dụng Vue. Bạn sẽ được giới thiệu một vài tính năng cơ bản cho dự án như dùng TypeScript hoặc hỗ trợ tesing (kiểm tra lỗi):
 
-<div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Project name: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add JSX Support? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Vue Router for Single Page Application development? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Pinia for state management? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Cypress for testing? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Tên dự án: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span></span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng JSX? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng Vue Router cho việc phát triển web dưới dạng Single Page Application development? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng Pinia để quản lý State? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng Cypress để testing? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span></span>
-<span style="color:#A6ACCD;">Scaffolding project in ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span>...</span>
-<span style="color:#A6ACCD;">Done.</span></code></pre></div>
+<span style="color:#A6ACCD;">Tạo khuôn mẫu dự án trong ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span>...</span>
+<span style="color:#A6ACCD;">Hoàn thành.</span></code></pre></div>
 
-If you are unsure about an option, simply choose `No` by hitting enter for now. Once the project is created, follow the instructions to install dependencies and start the dev server:
+Nếu bạn không chắc chắn về một tùy chọn nào đó, đơn giản bạn nên chọn `Không` bằng cách nhấn phím `Enter` ngay bây giờ. Một khi dự án đã được tạo xong, vui lòng làm theo hướng dẫn phía dưới để cài những dêpndencies cần thiết và chạy dự án trên dev server (môi trường phát triển):
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">cd</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span>
 <span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm install</span></span>
@@ -46,22 +50,22 @@ If you are unsure about an option, simply choose `No` by hitting enter for now. 
 <span class="line"></span></code></pre></div>
 
 You should now have your first Vue project running! Here are some additional tips:
+Bây giờ bạn đã có một dự án Vue đầu tiên đang chạy! Dưới đây là một vài mẹo khi xây dựng dự án bằng Vue:
 
-- The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/) + [Volar extension](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). [WebStorm](https://www.jetbrains.com/webstorm/) is also viable.
-- More tooling details, including integration with backend frameworks, are discussed in the [Tooling Guide](/guide/scaling-up/tooling.html).
-- To learn more about the underlying build tool Vite, check out the [Vite docs](https://vitejs.dev).
-- If you chose to use TypeScript, check out the [TypeScript Usage Guide](typescript/overview.html).
+- Trình soạn thảo code được khuyên khích dùng [Visual Studio Code](https://code.visualstudio.com/) + [Volar extension](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). [WebStorm](https://www.jetbrains.com/webstorm/).
+- Chi tiết về các công cụ hỗ trợ, kết hợp phát triển với phía backend (xử lý các thông tin ở phía máy chủ) được thảo luận tại [Tooling Guide](/guide/scaling-up/tooling.html).
+- Để tìm hiểu thêm về công cụ xây dựng Vite, hãy xem [Vite docs](https://vitejs.dev).
+- Nếu bạn sử dụng TypeScript, hãy xem [TypeScript Usage Guide](typescript/overview.html).
 
-When you are ready to ship your app to production, run the following:
-
+Khi bạn đã sẵn sàng để đưa dự án của mình lên môi trường production, vui lòng nhập dòng lệnh phía dưới:
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run build</span></span>
 <span class="line"></span></code></pre></div>
 
-This will create a production-ready build of your app in the project's `./dist` directory. Check out the [Production Deployment Guide](/guide/best-practices/production-deployment.html) to learn more about shipping your app to production.
+Sau khi nhập dòng lệnh trên, các tệp cài đặt cho môi trường production (thương mại) của dự án được chứa ở thư mục `./dist`. Vui lòng xem thêm thông tin về việc đưa sản phẩm lên môi trường production.
 
-[Next Steps >](#next-steps)
+[Bước tiếp theo >](#next-steps)
 
-## Without Build Tools
+## Không sử dụng công cụ hỗ trợ
 
 To get started with Vue without a build step, simply copy the following code into an HTML file and open it in your browser:
 
@@ -147,19 +151,19 @@ You may have noticed that the imported component's template is inlined as a Java
 
 ## Next Steps
 
-If you skipped the [Introduction](/guide/introduction), we strongly recommend reading it before moving on to the rest of the documentation.
+Chúng tôi thực sự khuyên bạn nên đọc [Hướng dẫn](/guide/introduction) một cách nghiêm túc trước khi bước qua phần tiếp theo.
 
 <div class="vt-box-container next-steps">
   <a class="vt-box" href="/guide/essentials/application.html">
-    <p class="next-steps-link">Continue the Guide</p>
-    <p class="next-steps-caption">The guide walks you through every aspect of the framework in full details.</p>
+    <p class="next-steps-link">Tiếp tục xem hướng dẫn</p>
+    <p class="next-steps-caption">Tài liệu sẽ dẫn bạn qua mọi khía cạnh một cách thật chi tiết.</p>
   </a>
   <a class="vt-box" href="/tutorial/">
-    <p class="next-steps-link">Try the Tutorial</p>
-    <p class="next-steps-caption">For those who prefer learning things hands-on.</p>
+    <p class="next-steps-link">Thử làm theo hướng dẫn</p>
+    <p class="next-steps-caption">Dành cho những ai thích học bằng cách thực hành.</p>
   </a>
   <a class="vt-box" href="/examples/">
-    <p class="next-steps-link">Check out the Examples</p>
-    <p class="next-steps-caption">Explore examples of core features and common UI tasks.</p>
+    <p class="next-steps-link">Xem thêm các ví dụ</p>
+    <p class="next-steps-caption">Khám phá những ví dụ về các tính năng cơ bản và một vài bài tập về UI (User Interface, giao diện người dùng).</p>
   </a>
 </div>
