@@ -1,4 +1,4 @@
-# Creating a Vue Application
+# Tạo một ứng dụng Vue
 
 ## The application instance
 
