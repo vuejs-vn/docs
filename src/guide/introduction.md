@@ -106,7 +106,7 @@ button {
 
 SFC is a defining feature of Vue, and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](/guide/scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
 
-## Các kiêu API
+## Các kiểu API
 
 Vue component có thể được viết bằng hai kiểu API khác nhau: **Options API** và **Composition API**.
 
@@ -150,9 +150,7 @@ export default {
 
 ### Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup).
 
-With Composition API, we define a component's logic using imported API functions. In SFCs, Composition API is typically used with [`<script setup>`](/api/sfc-script-setup). The `setup` attribute is a hint that makes Vue perform compile-time transforms that allow us to use Composition API with less boilerplate. For example, imports and top-level variables / functions declared in `<script setup>` are directly usable in the template.
-
-Với Composition API, chúng ta định nghĩa logic của component bằng cách sử dụng các API được import. Trong SFCs, Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup). Thuộc tính `setup` nhưng m
+Với Composition API, chúng ta định nghĩa logic của component bằng cách sử dụng các API được import từ Vue. Trong SFCs, Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup). Thuộc tính `setup` nhưng m
 
 Here is the same component, with the exact same template, but using Composition API and `<script setup>` instead:
 
