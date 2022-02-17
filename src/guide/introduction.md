@@ -12,8 +12,6 @@ footer: false
 
 ## Vue là gì?
 
-Vue (phát âm: /vjuː/, giống **view**) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.
-
 Vue (phát âm: /vjuː/, giống **view**) là một JavaScript framework dùng để xây dựng giao diện người dùng. Nó được xây dựng trên nền tảng HTML, CSS và JavaScript, cung cấp mô hình lập trình declarative và component-based, giúp bạn phát triển giao diện người dùng một cách hiệu quả hơn, dù nó đơn giản hay phức tạp.
 
 Đây là một ví dụ nhỏ:
@@ -53,7 +51,7 @@ const count = ref(0)
 
 Ví dụ phía trên thể hiện hai tính năng của Vue:
 
-- **Declarative Rendering**: Vue sử dụng HTML để làm template, đồng thời mở rộng nó để cho phép chúng ta mô tả HTML dựa trên trạng thái của (biến, variable) JavaScript.
+- **Declarative Rendering**: Vue sử dụng HTML để làm template, đồng thời mở rộng nó để cho phép chúng ta mô tả HTML (sau khi render) dựa trên trạng thái của (biến, variable) JavaScript.
 
 - **Reactivity**: Vue tự động theo dõi sự thay đổi của các giá trị trong JavaScript và cập nhật DOM một cách hiệu.
 
@@ -82,8 +80,6 @@ Bất chấp tính linh hoạt, kiến thức cốt lõi về cách Vue hoạt �
 
 ## Single-File Components
 
-In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called **Single-File Component** (also known as `*.vue` files, abbreviated as **SFC**). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:
-
 Trong hầu hếu những dự án Vue có dùng build-tool, chúng tôi tạo ra những component sử dụng định dạng giống với HTML gọi là **Single-File Component** (còn được biết đến là các file `*.vue`, viết tắt là **SFC**). Một SFC, như tên của nó, đóng gói các thành phần của một component như logic (JavaScript), template (HTML), và style (CSS) trong một file duy nhất. Hãy viết lại ví dụ phía trên theo kiểu SFC:
 
 ```vue
@@ -110,36 +106,35 @@ button {
 
 SFC is a defining feature of Vue, and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](/guide/scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
 
-## API Styles
+## Các kiêu API
 
-Vue components can be authored in two different API styles: **Options API** and **Composition API**.
+Vue component có thể được viết bằng hai kiểu API khác nhau: **Options API** và **Composition API**.
 
 ### Options API
 
-With Options API, we define a component's logic using an object of options such as `data`, `methods`, and `mounted`. Properties defined by options are exposed on `this` inside functions, which points to the component instance:
+Với Option API, chúng ta định nghĩa logic của component bằng cách sử dụng các thuộc tính của option object, ví dụ như `data`, `methods`, và `mounted`. Các function nằm trong options có thể truy cập tới các thuộc tính khác của options thông qua `this`, `this` trỏ tới instance của component.
 
 ```vue
 <script>
 export default {
-  // Properties returned from data() becomes reactive state
-  // and will be exposed on `this`.
+  // Các thuộc tính được trả về bởi data() sẽ trở thành reactive state và được truy cập thông qua `this`.
   data() {
     return {
       count: 0
     }
   },
-
-  // Methods are functions that mutate state and trigger updates.
+  
+  // methods là những function sẽ thay đổi state và kích hoạt các cập nhật (template, watch, computed, ...).
   // They can be bound as event listeners in templates.
+  // Chúng có thể đóng vai trò như event listener trong template.
   methods: {
     increment() {
       this.count++
     }
   },
-
-  // Lifecycle hooks are called at different stages
-  // of a component's lifecycle.
-  // This function will be called when the component is mounted.
+  
+  // Lifecycle hooks được được gọi ở các giai đoạn khác trong trong vòng đời của component.
+  // Function dưới này sẽ được gọi khi component được mount.
   mounted() {
     console.log(`The initial count is ${this.count}.`)
   }
@@ -151,11 +146,13 @@ export default {
 </template>
 ```
 
-[Try it in the Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgLy8gcmVhY3RpdmUgc3RhdGVcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY291bnQ6IDBcbiAgICB9XG4gIH0sXG5cbiAgLy8gZnVuY3Rpb25zIHRoYXQgbXV0YXRlIHN0YXRlIGFuZCB0cmlnZ2VyIHVwZGF0ZXNcbiAgbWV0aG9kczoge1xuICAgIGluY3JlbWVudCgpIHtcbiAgICAgIHRoaXMuY291bnQrK1xuICAgIH1cbiAgfSxcblxuICAvLyBsaWZlY3ljbGUgaG9va3NcbiAgbW91bnRlZCgpIHtcbiAgICBjb25zb2xlLmxvZyhgVGhlIGluaXRpYWwgY291bnQgaXMgJHt0aGlzLmNvdW50fS5gKVxuICB9XG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPmNvdW50IGlzOiB7eyBjb3VudCB9fTwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4ifQ==)
+[Thử nó trong Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgLy8gcmVhY3RpdmUgc3RhdGVcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY291bnQ6IDBcbiAgICB9XG4gIH0sXG5cbiAgLy8gZnVuY3Rpb25zIHRoYXQgbXV0YXRlIHN0YXRlIGFuZCB0cmlnZ2VyIHVwZGF0ZXNcbiAgbWV0aG9kczoge1xuICAgIGluY3JlbWVudCgpIHtcbiAgICAgIHRoaXMuY291bnQrK1xuICAgIH1cbiAgfSxcblxuICAvLyBsaWZlY3ljbGUgaG9va3NcbiAgbW91bnRlZCgpIHtcbiAgICBjb25zb2xlLmxvZyhgVGhlIGluaXRpYWwgY291bnQgaXMgJHt0aGlzLmNvdW50fS5gKVxuICB9XG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPmNvdW50IGlzOiB7eyBjb3VudCB9fTwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4ifQ==)
 
-### Composition API
+### Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup).
 
 With Composition API, we define a component's logic using imported API functions. In SFCs, Composition API is typically used with [`<script setup>`](/api/sfc-script-setup). The `setup` attribute is a hint that makes Vue perform compile-time transforms that allow us to use Composition API with less boilerplate. For example, imports and top-level variables / functions declared in `<script setup>` are directly usable in the template.
+
+Với Composition API, chúng ta định nghĩa logic của component bằng cách sử dụng các API được import. Trong SFCs, Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup). Thuộc tính `setup` nhưng m
 
 Here is the same component, with the exact same template, but using Composition API and `<script setup>` instead:
 
@@ -206,9 +203,9 @@ If you are new to Vue, here's our general recommendation:
 
 You don't have to commit to only one style during the learning phase. The rest of the documentation will provide code samples in both styles where applicable, and you can toggle between them at any time using the **API Preference switches** at the top of the left sidebar.
 
-## Still Got Questions?
+## Bạn vẫn còn thắc mắc?
 
-Check out our [FAQ](/about/faq).
+Hãy xem qua trang [Hỏi Đáp](/about/faq).
 
 ## Pick Your Learning Path
 
