@@ -2,8 +2,6 @@
 footer: false
 ---
 
-<!-- # Quick Start -->
-
 # Bắt đầu
 
 Tùy thuộc vào trường hợp bạn sử dụng và sở thích của bạn, bạn có thể sử dụng Vue bằng cách sử dụng công cụ để tạo dự án hoặc dùng dường dẫn thư viện trực tiếp.
