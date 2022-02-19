@@ -19,7 +19,7 @@ Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại 
 
 :::tip Điều kiện tiên quyết
 
-- Đã quen với việc sử dụng cửa sổ dòng lệnh
+- Đã quen với việc sử dụng dòng lệnh
 - Đã cài đặt [Node.js](https://nodejs.org/)
   :::
 
