@@ -48,7 +48,7 @@ Nếu bạn không chắc chắn về một tùy chọn nào đó, chỉ cần c
 <span class="line"></span></code></pre></div>
 
 You should now have your first Vue project running! Here are some additional tips:
-Bây giờ bạn đã có một dự án Vue đầu tiên đang chạy! Dưới đây là một vài mẹo khi xây dựng dự án bằng Vue:
+Thế là bạn đã chạy được dự án Vue đầu tiên! Sau đây là một vài mẹo nhỏ:
 
 - Trình soạn thảo code được khuyên khích dùng [Visual Studio Code](https://code.visualstudio.com/) + [Volar extension](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). [WebStorm](https://www.jetbrains.com/webstorm/).
 - Chi tiết về các công cụ hỗ trợ, kết hợp phát triển với phía backend (xử lý các thông tin ở phía máy chủ) được thảo luận tại [Tooling Guide](/guide/scaling-up/tooling.html).
