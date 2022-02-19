@@ -28,12 +28,12 @@ Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại 
 
 Lệnh này sẽ cài đặt và thực thi [create-vue](https://github.com/vuejs/create-vue) - một công cụ để tạo khuôn mẫu thư mục chính thức cho dự án sử dụng Vue. Bạn có thể chọn các tính năng cho dự án như dùng TypeScript hoặc hỗ trợ testing (kiểm lỗi):
 
-<div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Tên dự án: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span></span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng JSX? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng Vue Router cho việc phát triển web dưới dạng Single Page Application development? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng Pinia để quản lý State? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng Cypress để testing? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Project name: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add JSX Support? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Vue Router for Single Page Application development? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Pinia for state management? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Cypress for testing? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span></span>
 <span style="color:#A6ACCD;">Tạo khuôn mẫu dự án trong ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span>...</span>
 <span style="color:#A6ACCD;">Hoàn thành.</span></code></pre></div>
