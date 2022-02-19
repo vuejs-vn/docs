@@ -63,7 +63,7 @@ Sau khi nhập dòng lệnh trên, các tệp cài đặt cho môi trường pro
 
 [Bước tiếp theo >](#next-steps)
 
-## Không sử dụng công cụ hỗ trợ
+## Không dùng công cụ hỗ trợ xây dựng
 
 To get started with Vue without a build step, simply copy the following code into an HTML file and open it in your browser:
 
