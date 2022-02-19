@@ -35,8 +35,8 @@ Lệnh này sẽ cài đặt và thực thi [create-vue](https://github.com/vuej
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Pinia for state management? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Cypress for testing? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span></span>
-<span style="color:#A6ACCD;">Tạo khuôn mẫu dự án trong ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span>...</span>
-<span style="color:#A6ACCD;">Hoàn thành.</span></code></pre></div>
+<span style="color:#A6ACCD;">Scaffolding project in ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span>...</span>
+<span style="color:#A6ACCD;">Done.</span></code></pre></div>
 
 Nếu bạn không chắc chắn về một tùy chọn nào đó, chỉ cần chọn `No` bằng cách nhấn `Enter`. Khi dự án đã được tạo xong, làm theo các hướng dẫn sau để cài dependency và khởi động dev server:
 
