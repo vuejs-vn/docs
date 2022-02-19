@@ -47,7 +47,6 @@ Nếu bạn không chắc chắn về một tùy chọn nào đó, chỉ cần c
 <span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run dev</span></span>
 <span class="line"></span></code></pre></div>
 
-You should now have your first Vue project running! Here are some additional tips:
 Thế là bạn đã chạy được dự án Vue đầu tiên! Sau đây là một vài mẹo nhỏ:
 
 - Nên dùng [Visual Studio Code](https://code.visualstudio.com/) + [gói mở rộng Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). Bạn cũng có thể dùng [WebStorm](https://www.jetbrains.com/webstorm/).
