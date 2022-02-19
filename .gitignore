@@ -23,6 +23,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# IDE, editors
+.idea/
+
 ### Node ###
 # Logs
 logs
