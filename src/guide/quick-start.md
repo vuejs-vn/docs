@@ -58,7 +58,7 @@ Khi bạn đã sẵn sàng để đưa dự án của mình lên môi trường 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run build</span></span>
 <span class="line"></span></code></pre></div>
 
-Sau khi nhập dòng lệnh trên, các tệp cài đặt cho môi trường production (thương mại) của dự án được chứa ở thư mục `./dist`. Vui lòng xem thêm thông tin về việc đưa sản phẩm lên môi trường production.
+Lệnh này sẽ tạo một bản build cho môi trường production tại thư mục `./dist`. Xem thêm [Hướng dẫn triển khai lên production](/guide/best-practices/production-deployment.html) để biết thêm chi tiết.
 
 [Bước tiếp theo >](#next-steps)
 
