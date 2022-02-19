@@ -40,7 +40,7 @@ Lệnh này sẽ cài đặt và thực thi [create-vue](https://github.com/vuej
 <span style="color:#A6ACCD;">Tạo khuôn mẫu dự án trong ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span>...</span>
 <span style="color:#A6ACCD;">Hoàn thành.</span></code></pre></div>
 
-Nếu bạn không chắc chắn về một tùy chọn nào đó, đơn giản bạn nên chọn `Không` bằng cách nhấn phím `Enter` ngay bây giờ. Một khi dự án đã được tạo xong, vui lòng làm theo hướng dẫn phía dưới để cài những dêpndencies cần thiết và chạy dự án trên dev server (môi trường phát triển):
+Nếu bạn không chắc chắn về một tùy chọn nào đó, chỉ cần chọn `No` bằng cách nhấn `Enter`. Khi dự án đã được tạo xong, làm theo các hướng dẫn sau để cài dependency và khởi động dev server:
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">cd</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span>
 <span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm install</span></span>
