@@ -161,6 +161,6 @@ Bạn nêu đọc kĩ phần [Giới thiệu](/guide/introduction) trước khi 
   </a>
   <a class="vt-box" href="/examples/">
     <p class="next-steps-link">Xem ví dụ</p>
-    <p class="next-steps-caption">Khám phá những ví dụ về các tính năng cơ bản và một vài bài tập về UI (User Interface, giao diện người dùng).</p>
+    <p class="next-steps-caption">Khám phá thêm các ví dụ về những tính năng cơ bản và một vài bài tập về UI (User Interface, giao diện người dùng).</p>
   </a>
 </div>
