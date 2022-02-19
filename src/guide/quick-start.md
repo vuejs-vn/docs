@@ -23,7 +23,7 @@ Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại 
 - Đã cài đặt [Node.js](https://nodejs.org/)
   :::
 
-Để khởi tạo một dự án bằng Vue trên máy tính của bạn, vui lòng nhập dòng lệnh phía dưới (không có dấu `>` ở phía trước câu lệnh):
+Để khởi tạo một dự án bằng Vue trên máy tính của bạn, hãy nhập dòng lệnh phía dưới (không có dấu `>`):
 
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt;</span> <span style="color:#A6ACCD;">npm init vue@latest</span></span></code></pre></div>
