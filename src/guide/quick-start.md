@@ -64,7 +64,7 @@ Lệnh này sẽ tạo một bản build cho môi trường production tại th�
 
 ## Không dùng công cụ hỗ trợ xây dựng
 
-To get started with Vue without a build step, simply copy the following code into an HTML file and open it in your browser:
+Để bắt đầu sử dụng Vue mà không sử dụng công cụ hỗ trợ xây dựng, chỉ cần sao chép đoạn mã sau vào một file HTML và mở file này trong trình duyệt:
 
 ```html
 <script src="https://unpkg.com/vue@3"></script>
