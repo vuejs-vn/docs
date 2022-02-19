@@ -148,7 +148,7 @@ You may have noticed that the imported component's template is inlined as a Java
 
 ## Next Steps
 
-Chúng tôi thực sự khuyên bạn nên đọc [Hướng dẫn](/guide/introduction) một cách nghiêm túc trước khi bước qua phần tiếp theo.
+Bạn nêu đọc kĩ phần [Giới thiệu](/guide/introduction) trước khi bước qua phần tiếp theo.
 
 <div class="vt-box-container next-steps">
   <a class="vt-box" href="/guide/essentials/application.html">
