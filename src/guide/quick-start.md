@@ -53,7 +53,7 @@ Thế là bạn đã chạy được dự án Vue đầu tiên! Sau đây là m�
 - Nên dùng [Visual Studio Code](https://code.visualstudio.com/) + [gói mở rộng Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). Bạn cũng có thể dùng [WebStorm](https://www.jetbrains.com/webstorm/).
 - Chi tiết về các công cụ hỗ trợ, kết hợp phát triển với phía backend (xử lý các thông tin ở phía máy chủ) được thảo luận tại [Tooling Guide](/guide/scaling-up/tooling.html).
 - Để tìm hiểu thêm về công cụ xây dựng Vite, hãy xem [Vite docs](https://vitejs.dev).
-- Nếu bạn sử dụng TypeScript, hãy xem [TypeScript Usage Guide](typescript/overview.html).
+- Nếu bạn sử dụng TypeScript, hãy xem [hướng dẫn sử dụng TypeScript](typescript/overview.html).
 
 Khi bạn đã sẵn sàng để đưa dự án của mình lên môi trường production, vui lòng nhập dòng lệnh phía dưới:
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run build</span></span>
