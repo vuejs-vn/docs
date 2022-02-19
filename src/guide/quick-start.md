@@ -50,7 +50,7 @@ Nếu bạn không chắc chắn về một tùy chọn nào đó, chỉ cần c
 You should now have your first Vue project running! Here are some additional tips:
 Thế là bạn đã chạy được dự án Vue đầu tiên! Sau đây là một vài mẹo nhỏ:
 
-- Trình soạn thảo code được khuyên khích dùng [Visual Studio Code](https://code.visualstudio.com/) + [Volar extension](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). [WebStorm](https://www.jetbrains.com/webstorm/).
+- Nên dùng [Visual Studio Code](https://code.visualstudio.com/) + [gói mở rộng Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). Bạn cũng có thể dùng [WebStorm](https://www.jetbrains.com/webstorm/).
 - Chi tiết về các công cụ hỗ trợ, kết hợp phát triển với phía backend (xử lý các thông tin ở phía máy chủ) được thảo luận tại [Tooling Guide](/guide/scaling-up/tooling.html).
 - Để tìm hiểu thêm về công cụ xây dựng Vite, hãy xem [Vite docs](https://vitejs.dev).
 - Nếu bạn sử dụng TypeScript, hãy xem [TypeScript Usage Guide](typescript/overview.html).
