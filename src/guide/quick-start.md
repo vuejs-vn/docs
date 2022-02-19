@@ -160,7 +160,7 @@ Chúng tôi thực sự khuyên bạn nên đọc [Hướng dẫn](/guide/introd
     <p class="next-steps-caption">Dành cho những ai thích học bằng cách thực hành.</p>
   </a>
   <a class="vt-box" href="/examples/">
-    <p class="next-steps-link">Xem thêm các ví dụ</p>
+    <p class="next-steps-link">Xem ví dụ</p>
     <p class="next-steps-caption">Khám phá những ví dụ về các tính năng cơ bản và một vài bài tập về UI (User Interface, giao diện người dùng).</p>
   </a>
 </div>
