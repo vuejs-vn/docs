@@ -55,7 +55,7 @@ Thế là bạn đã chạy được dự án Vue đầu tiên! Sau đây là m�
 - Để tìm hiểu thêm về công cụ xây dựng Vite, hãy xem [Vite docs](https://vitejs.dev).
 - Nếu bạn sử dụng TypeScript, hãy xem [hướng dẫn sử dụng TypeScript](typescript/overview.html).
 
-Khi bạn đã sẵn sàng để đưa dự án của mình lên môi trường production, vui lòng nhập dòng lệnh phía dưới:
+Khi bạn đã sẵn sàng để đưa dự án của mình lên môi trường production, nhập dòng lệnh phía dưới:
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run build</span></span>
 <span class="line"></span></code></pre></div>
 
