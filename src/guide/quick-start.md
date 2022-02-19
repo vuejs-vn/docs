@@ -10,7 +10,7 @@ Tùy thuộc vào trường hợp bạn sử dụng và sở thích của bạn,
 
 ## Sử dụng công cụ hỗ trợ để tạo dự án
 
-Là một công cụ cho phép xây dựng dự án bằng Vue dưới dạng [Single-File Components](/guide/scaling-up/sfc) (SFCs). Công cụ xây dựng dự án bằng Vue dựa trên [Vite](https://vitejs.dev) - một công cụ xây dựng dự án web ở phía người dùng hiện đại, nhẹ nhàng và cực kỳ nhanh chóng.
+Là một công cụ cho phép xây dựng dự án bằng Vue dưới dạng [Single-File Component](/guide/scaling-up/sfc) (SFC). Công cụ xây dựng dự án bằng Vue dựa trên [Vite](https://vitejs.dev) - một công cụ xây dựng dự án web ở phía người dùng hiện đại, nhẹ nhàng và cực kỳ nhanh chóng.
 
 ### Trực tuyến
 
