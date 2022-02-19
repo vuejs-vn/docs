@@ -28,7 +28,7 @@ Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại 
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt;</span> <span style="color:#A6ACCD;">npm init vue@latest</span></span></code></pre></div>
 
-Lệnh này sẽ cài đặt và thực thi lệnh [create-vue](https://github.com/vuejs/create-vue) - một công cụ để tạo khuôn mẫu thư mục chính thức cho dự án sử dụng Vue. Bạn sẽ được giới thiệu một vài tính năng cơ bản cho dự án như dùng TypeScript hoặc hỗ trợ tesing (kiểm tra lỗi):
+Lệnh này sẽ cài đặt và thực thi [create-vue](https://github.com/vuejs/create-vue) - một công cụ để tạo khuôn mẫu thư mục chính thức cho dự án sử dụng Vue. Bạn có thể chọn các tính năng cho dự án như dùng TypeScript hoặc hỗ trợ testing (kiểm lỗi):
 
 <div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Tên dự án: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">tên-dự-án-của-bạn</span><span style="color:#89DDFF;">&gt;</span></span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Sử dụng TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">Không</span> / Có</span></span>
