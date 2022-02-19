@@ -14,8 +14,6 @@ Là một công cụ cho phép xây dựng dự án bằng Vue dưới dạng [S
 
 ### Trực tuyến
 
-You can try Vue with SFCs online on [StackBlitz](https://vite.new/vue). StackBlitz runs the Vite-based build setup directly in the browser, so it is almost identical to the local setup but doesn't require installing anything on your machine.
-
 Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại [StackBlitz](https://vite.new/vue). StackBlitz sẽ xây dựng những thiết Vite-based trực tiếp trên trình duyệt, vì vậy nó gần giống như bạn thực hiện trên máy tính mình mà không cần phải cài đặt thêm bất cứ gì.
 ### Local (Máy tính cá nhân)
 
