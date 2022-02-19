@@ -17,7 +17,7 @@ Là một công cụ cho phép xây dựng dự án bằng Vue dưới dạng [S
 Bạn có thể thử tạo dự án Vue với dạng SFCs trực tuyến tại [StackBlitz](https://vite.new/vue). StackBlitz sẽ xây dựng những thiết Vite-based trực tiếp trên trình duyệt, vì vậy nó gần giống như bạn thực hiện trên máy tính mình mà không cần phải cài đặt thêm bất cứ gì.
 ### Local (Máy tính cá nhân)
 
-:::tip Diều kiện tiên quyết
+:::tip Điều kiện tiên quyết
 
 - Đã quen với việc sử dụng cửa sổ dòng lệnh
 - Đã cài đặt [Node.js](https://nodejs.org/)
