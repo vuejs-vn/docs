@@ -51,7 +51,7 @@ You should now have your first Vue project running! Here are some additional tip
 Thế là bạn đã chạy được dự án Vue đầu tiên! Sau đây là một vài mẹo nhỏ:
 
 - Nên dùng [Visual Studio Code](https://code.visualstudio.com/) + [gói mở rộng Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar). Bạn cũng có thể dùng [WebStorm](https://www.jetbrains.com/webstorm/).
-- Chi tiết về các công cụ hỗ trợ, kết hợp phát triển với phía backend (xử lý các thông tin ở phía máy chủ) được thảo luận tại [Tooling Guide](/guide/scaling-up/tooling.html).
+- Chi tiết về các công cụ hỗ trợ, kết hợp phát triển với phía backend (xử lý các thông tin ở phía máy chủ) được thảo luận tại [hướng dẫn về công cụ sử dụng](/guide/scaling-up/tooling.html).
 - Để tìm hiểu thêm về công cụ xây dựng Vite, hãy xem [Vite docs](https://vitejs.dev).
 - Nếu bạn sử dụng TypeScript, hãy xem [hướng dẫn sử dụng TypeScript](typescript/overview.html).
 
