@@ -6,17 +6,16 @@ import SponsorsGroup from './SponsorsGroup.vue';
 <template>
   <section id="hero">
     <h1 class="tagline">
-      The
-      <span class="accent">Progressive</span>
-      <br />JavaScript Framework
+      Framework JavaScript
+      <br />
+      <span class="accent">linh động</span>
     </h1>
-    <p class="description">
-      An approachable, performant and versatile framework for building web
-      user interfaces.
-    </p>
+    <p
+      class="description"
+    >Một framework gần gũi, mạnh mẽ và linh hoạt để xây dựng giao diện người dùng trên nền tảng web.</p>
     <p class="actions">
       <a class="get-started" href="/guide/introduction.html">
-        Get Started
+        Bắt đầu
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -29,22 +28,17 @@ import SponsorsGroup from './SponsorsGroup.vue';
           />
         </svg>
       </a>
-      <a class="setup" href="/guide/quick-start.html">Install</a>
+      <a class="setup" href="/guide/quick-start.html">Cài đặt</a>
     </p>
   </section>
 
   <!-- TODO make dynamic based on data -->
   <section id="special-sponsor">
-    <span>Special Sponsor</span>
+    <span>Tài trợ đặc biệt</span>
     <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">
       <picture>
         <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />
-        <img
-          alt="hbuilder logo"
-          width="97"
-          height="36"
-          src="/images/sponsors/hbuilder.png"
-        />
+        <img alt="hbuilder logo" width="97" height="36" src="/images/sponsors/hbuilder.png" />
       </picture>
     </a>
     <span>Advanced IDE for Vue</span>
@@ -52,32 +46,23 @@ import SponsorsGroup from './SponsorsGroup.vue';
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>Approachable</h2>
-      <p>
-        Builds on top of standard HTML, CSS and JavaScript with intuitive
-        API and world-class documentation.
-      </p>
+      <h2>Gần gũi</h2>
+      <p>Xây dựng dựa trên HTML, CSS và JavaScript, với API trực quan và tài liệu đẳng cấp thế giới.</p>
     </div>
     <div class="vt-box">
-      <h2>Performant</h2>
-      <p>
-        Truly reactive, compiler-optimized rendering system that rarely
-        requires manual optimization.
-      </p>
+      <h2>Mạnh mẽ</h2>
+      <p>Hệ thống render hoàn toàn reactive và được tối ưu hóa từ bước biên dịch, hiếm khi cần đến tối ưu thủ công.</p>
     </div>
     <div class="vt-box">
-      <h2>Versatile</h2>
-      <p>
-        A rich, incrementally adoptable ecosystem that scales between a
-        library and a full-featured framework.
-      </p>
+      <h2>Linh hoạt</h2>
+      <p>Một hệ sinh thái phong phú từ cơ bản đến nâng cao, từ một thư viện đơn giản đến một framework đầy đủ tính năng.</p>
     </div>
   </section>
 
   <section id="sponsors">
-    <h2>Platinum Sponsors</h2>
+    <h2>Nhà tài trợ Bạch Kim</h2>
     <SponsorsGroup tier="platinum" placement="landing" />
-    <h2>Gold Sponsors</h2>
+    <h2>Nhà tài trợ Vàng</h2>
     <SponsorsGroup tier="gold" placement="landing" />
   </section>
 
