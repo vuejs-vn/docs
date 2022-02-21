@@ -1,20 +1,20 @@
-# Template Syntax
+# Cú pháp template
 
-Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data. All Vue templates are syntactically valid HTML that can be parsed by spec-compliant browsers and HTML parsers.
+Vue sử dụng một cú pháp template dựa trên HTML, cho phép bạn ràng buộc (bind) một cách minh bạch cấu trúc DOM được render với dữ liệu của đối tượng Vue bên dưới. Tất cả template của Vue đều là code HTML hợp lệ và có thể được parse bởi các trình duyệt và HTML parser tiểu chuẩn.
 
-Under the hood, Vue compiles the templates into highly-optimized JavaScript code. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
+Bên dưới, Vue biên dịch các template thành code JavaScript được tối ưu cao. Kết hợp với hệ thống reactivity (phản ứng), Vue có thể xác định một cách thông mình số lượng tối thiểu các component cần phải render lại, và áp dụng số lượng tối thiểu các thao tác về DOM khi trạng thái của ứng dụng thay đổi.
 
-If you are familiar with Virtual DOM concepts and prefer the raw power of JavaScript, you can also [directly write render functions](/guide/extras/render-function.html) instead of templates, with optional JSX support. However, do note that they do not enjoy the same level of compile-time optimizations as templates.
+Nếu bạn đã quen thuộc với khái niệm Virtual DOM và muốn sử dụng sức mạnh của JavaScript, bạn có thể [viết thẳng các hàm render](/guide/extras/render-function.html) cùng với JSX (không bắt buộc), thay vì sử dụng template. Tuy nhiên, hãy lưu ý rằng chúng (các hàm render) không thừa hưởng cùng mức độ tối ưu về thời gian biên dịch như template. 
 
-## Text Interpolation
+## Nội suy văn bản
 
-The most basic form of data binding is text interpolation using the "Mustache" syntax (double curly braces):
+Hình thức ràng buộc dữ liệu cơ bản nhất là nội suy văn bản (text interpolation) sử dụng cú pháp "Mustache" ("ria mép" - hai dấu ngoặc nhọn):
 
 ```vue-html
-<span>Message: {{ msg }}</span>
+<span>Thông điệp: {{ msg }}</span>
 ```
 
-The mustache tag will be replaced with the value of the `msg` property from the corresponding component instance. It will also be updated whenever the `msg` property changes.
+Thẻ mustache sẽ được thay thế bằng giá trị của thuộc tính `msg` từ component instance tương ứng, và cũng sẽ được cập nhật bất cứ khi nào thuộc tính này thay đổi.
 
 ## Raw HTML
 
