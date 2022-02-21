@@ -8,11 +8,11 @@ import SponsorsGroup from './SponsorsGroup.vue';
     <h1 class="tagline">
       Framework JavaScript
       <br />
-      <span class="accent">Linh Động</span>
+      <span class="accent">linh động</span>
     </h1>
-    <p class="description">
-      Một framework gần gũi, mạnh mẽ và linh hoạt để xây dựng giao diện người dùng web.
-    </p>
+    <p
+      class="description"
+    >Một framework gần gũi, mạnh mẽ và linh hoạt để xây dựng giao diện người dùng trên nền tảng web.</p>
     <p class="actions">
       <a class="get-started" href="/guide/introduction.html">
         Bắt đầu
@@ -38,12 +38,7 @@ import SponsorsGroup from './SponsorsGroup.vue';
     <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">
       <picture>
         <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />
-        <img
-          alt="hbuilder logo"
-          width="97"
-          height="36"
-          src="/images/sponsors/hbuilder.png"
-        />
+        <img alt="hbuilder logo" width="97" height="36" src="/images/sponsors/hbuilder.png" />
       </picture>
     </a>
     <span>Advanced IDE for Vue</span>
@@ -52,21 +47,15 @@ import SponsorsGroup from './SponsorsGroup.vue';
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
       <h2>Gần gũi</h2>
-      <p>
-        Xây dựng dựa trên HTML, CSS và JavaScript tiêu chuẩn với API trực quan và tài liệu tốt nhất.
-      </p>
+      <p>Xây dựng dựa trên HTML, CSS và JavaScript, với API trực quan và tài liệu đẳng cấp thế giới.</p>
     </div>
     <div class="vt-box">
       <h2>Mạnh mẽ</h2>
-      <p>
-        Thật sự reactive, trình biên dịch được tối ưu để render hệ thống mà hiếm khi cần tới tối ưu hóa thủ công.
-      </p>
+      <p>Hệ thống render hoàn toàn reactive và được tối ưu hóa từ bước biên dịch, hiếm khi cần đến tối ưu thủ công.</p>
     </div>
     <div class="vt-box">
-      <h2>Đa năng</h2>
-      <p>
-        Một hệ sinh thái linh hoạt với các thành phần từ cơ bản đến nâng cao, từ một thư viện đơn giản đến một framework đầy đủ tính năng.
-      </p>
+      <h2>Linh hoạt</h2>
+      <p>Một hệ sinh thái phong phú từ cơ bản đến nâng cao, từ một thư viện đơn giản đến một framework đầy đủ tính năng.</p>
     </div>
   </section>
 
