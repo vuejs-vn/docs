@@ -4,15 +4,15 @@ outline: deep
 
 # Nguyên tắc cơ bản về Reactivity
 
-:::tip API Preference
-This page and many other chapters later in the guide contain different content for Options API and Composition API. Your current preference is <span class="options-api">Options API</span><span class="composition-api">Composition API</span>. You can toggle between the API styles using the "API Preference" switches at the top of the left sidebar.
+:::tip Tùy chọn API
+Kể từ trang này, mục chỉ dẫn sẽ có các nội dung khác nhau về Options API và Composition API. Tùy chọn hiện tại của bạn là <span class="options-api">Options API</span><span class="composition-api">Composition API</span>. Bạn có thể thay đổi qua lại giữa các hình thức API bằng cách sử dụng công tắc chuyển đổi "API Preference" tại đầu cột bên trái.
 :::
 
-## Declaring Reactive State
+## Khai báo Reactive State
 
 <div class="options-api">
 
-With Options API, we use the `data` option to declare reactive state of a component. The option value should be a function that returns an object. Vue will call the function when creating a new component instance, and wrap the returned object in its reactivity system. Any top-level properties of this object are proxied on the component instance (`this` in methods and lifecycle hooks):
+Với tùy chọn Options API, chúng ta sử dụng thuộc tính `data` để khai báo state của component. Giá trị của thuộc tính `data` này nên  là một hàm trả về một object. Vue sẽ thực thi hàm này mỗi khi tạo mới một component instance, và nhúng object của hàm trả về vào hệ thống reactivity của nó. Bất cứ thuộc tính thượng cấp (top-level) nào của đối tượng đều được ủy quyền (proxy) trên component instance (đối tượng this trong phương thức (methods) và các hook vòng đời (lifecycle)):
 
 ```js{2-6}
 export default {
@@ -22,28 +22,28 @@ export default {
     }
   },
 
-  // `mounted` is a lifecycle hook which we will explain later
+  // `mounted` là một hook vòng đời (lifecycle) mà chúng ta sẽ học ở các phần sau
   mounted() {
-    // `this` refers to the component instance.
+    // `this` tham chiếu tới component instance
     console.log(this.count) // => 1
 
-    // data can be mutated as well
+    // data cũng có thể được thay đổi (mutate)
     this.count = 2
   }
 }
 ```
 
-[Try it in the Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY291bnQ6IDFcbiAgICB9XG4gIH0sXG5cbiAgLy8gYG1vdW50ZWRgIGlzIGEgbGlmZWN5Y2xlIGhvb2sgd2hpY2ggd2Ugd2lsbCBleHBsYWluIGxhdGVyXG4gIG1vdW50ZWQoKSB7XG4gICAgLy8gYHRoaXNgIHJlZmVycyB0byB0aGUgY29tcG9uZW50IGluc3RhbmNlLlxuICAgIGNvbnNvbGUubG9nKHRoaXMuY291bnQpIC8vID0+IDFcblxuICAgIC8vIGRhdGEgY2FuIGJlIG11dGF0ZWQgYXMgd2VsbFxuICAgIHRoaXMuY291bnQgPSAyXG4gIH1cbn1cbjwvc2NyaXB0PlxuXG48dGVtcGxhdGU+XG4gIENvdW50IGlzOiB7eyBjb3VudCB9fVxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=)
+[Thử ngay trong Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY291bnQ6IDFcbiAgICB9XG4gIH0sXG5cbiAgLy8gYG1vdW50ZWRgIGlzIGEgbGlmZWN5Y2xlIGhvb2sgd2hpY2ggd2Ugd2lsbCBleHBsYWluIGxhdGVyXG4gIG1vdW50ZWQoKSB7XG4gICAgLy8gYHRoaXNgIHJlZmVycyB0byB0aGUgY29tcG9uZW50IGluc3RhbmNlLlxuICAgIGNvbnNvbGUubG9nKHRoaXMuY291bnQpIC8vID0+IDFcblxuICAgIC8vIGRhdGEgY2FuIGJlIG11dGF0ZWQgYXMgd2VsbFxuICAgIHRoaXMuY291bnQgPSAyXG4gIH1cbn1cbjwvc2NyaXB0PlxuXG48dGVtcGxhdGU+XG4gIENvdW50IGlzOiB7eyBjb3VudCB9fVxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=)
 
-These instance properties are only added when the instance is first created, so you need to ensure they are all present in the object returned by the `data` function. Where necessary, use `null`, `undefined` or some other placeholder value for properties where the desired value isn't yet available.
+Các thuộc tính instance này chỉ được thêm vào khi instance đã được tạo lần đầu, nên bạn cần phải chắc chắn rằng chúng phải có sẵn trong object trả về của hàm `data`. Khi cần thiết, có thể sử dụng `null`, `undefined` hoặc một vài giá trị mẫu cho các thuộc tính chưa thực sự khả dụng.
 
-It is possible to add a new property directly to `this` without including it in `data`. However, properties added this way will not be able to trigger reactive updates.
+Bạn có thể thêm trực tiếp thuộc tính mới vào `this` mà không cần thông qua `data`. Tuy nhiên các thuộc tính được thêm kiểu này sẽ không có tính reactive.
 
-Vue uses a `$` prefix when exposing its own built-in APIs via the component instance. It also reserves the prefix `_` for internal properties. You should avoid using names for top-level `data` properties that start with either of these characters.
+Vue sử dụng tiền tố `$` cho các API tích hợp khi hiển thị nó qua component instance. Nó cũng sử dụng tiền tố `_` cho các thuộc tính bên trong (internal). Bạn nên tránh đặt tên cho các state thượng cấp (top-level) trong `data` mà bắt đầu với các ký tự trên.
 
-### Reactive Proxy vs. Original \*
+### Reactive Proxy vs. Bản gốc \*
 
-In Vue 3, data is made reactive by leveraging [JavaScript Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Users coming from Vue 2 should be aware of the following edge case:
+Ở Vue 3, dữ liệu được reactive bằng cách tận dụng tính năng [JavaScript Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Người dùng Vue 2 nên lưu ý edge case sau:
 
 ```js
 export default {
@@ -61,13 +61,13 @@ export default {
 }
 ```
 
-When you access `this.someObject` after assigning it, the value is a reactive proxy of the original `newObject`. **Unlike in Vue 2, the original `newObject` is left intact and will not be made reactive: make sure to always access reactive state as a property of `this`.**
+Khi bạn truy cập vào `this.someObject` sau khi đã gán giá trị cho nó, giá trị lúc này đã trở thành một reactive proxy của `newObject` ban đầu. **Không giống như Vue 2, biến `newObject` ban đầu sẽ được giữ nguyên và không trở nên reactive: hãy chắc chắn rằng bạn luôn truy cập vào các reactive state như là một thuộc tính của `this`.**
 
 </div>
 
 <div class="composition-api">
 
-We can create a reactive object or array with the [`reactive()`](/api/reactivity-core.html#reactive) function:
+Chúng ta có thể khởi tạo một reactive object hoặc array với hàm [`reactive()`](/api/reactivity-core.html#reactive):
 
 ```js
 import { reactive } from 'vue'
@@ -75,21 +75,21 @@ import { reactive } from 'vue'
 const state = reactive({ count: 0 })
 ```
 
-Reactive objects are [JavaScript Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) and behave just like normal objects. The difference is that Vue is able to track the property access and mutations of a reactive object. If you are curious about the details, we explain how Vue's reactivity system works in [Reactivity in Depth](/guide/extras/reactivity-in-depth.html) - but we recommend reading it after you have finished the main guide.
+Những Reactive object là [JavaScript Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) và hoạt động cũng giống như object bình thường. Sự khác biệt duy nhất là Vue có thể theo dõi được lượt truy cập thuộc tính và sự thay đổi (mutation) của một reactive object. Nếu bạn có hứng thú về các chi tiết sâu hơn, chúng tôi có giải thích cách mà hệ thống Reactivity của Vue hoạt động trong  [Sâu hơn về Reactivity](/guide/extras/reactivity-in-depth.html) - nhưng chúng tôi khuyến nghị bạn chỉ nên đọc chúng sau khi hoàn thành hết mục chỉ dẫn chính.
 
-See also: [Typing Reactive](/guide/typescript/composition-api.html#typing-reactive) <sup class="vt-badge ts" />
+Xem thêm: [Typing Reactive](/guide/typescript/composition-api.html#typing-reactive) <sup class="vt-badge ts" />
 
-To use reactive state in a component's template, declare and return them from a component's `setup()` function:
+Để sử dụng reactive state trong template của component, khai báo và trả về chúng từ hàm `setup()` của component:
 
 ```js{5,9-11}
 import { reactive } from 'vue'
 
 export default {
-  // `setup` is a special hook dedicated for composition API.
+  // `setup` là một hook đặc biệt dành riêng cho Composition API
   setup() {
     const state = reactive({ count: 0 })
 
-    // expose the state to the template
+    // hiển thị state lên template
     return {
       state
     }
@@ -101,7 +101,7 @@ export default {
 <div>{{ state.count }}</div>
 ```
 
-Similarly, we can declare functions that mutate reactive state in the same scope, and expose it as a method alongside the state:
+Tương tự thế, chúng ta có thể khai báo những hàm mà thay đổi (mutate) reactive state trong cùng một phạm vi (scope), và trả chúng ra như là một hàm bên cạnh các state:
 
 ```js{7-9,14}
 import { reactive } from 'vue'
@@ -114,7 +114,7 @@ export default {
       state.count++
     }
 
-    // don't forget to expose the function as well.
+    // đừng quên hiển thị các hàm ra nhé
     return {
       state,
       increment
@@ -123,7 +123,7 @@ export default {
 }
 ```
 
-Exposed methods are typically used as event listeners:
+Các hàm đã được hiển thị thường được sử dụng như là các bộ lắng nghe sự kiện (event listener):
 
 ```vue-html
 <button @click="increment">
@@ -133,7 +133,7 @@ Exposed methods are typically used as event listeners:
 
 ### `<script setup>` \*\*
 
-Manually exposing state and methods via `setup()` can be verbose. Luckily, it is only necessary when not using a build step. When using Single-File Components (SFCs), we can greatly simplify the usage with `<script setup>`:
+Trả về thủ công các state và phương thức (methods) thông qua `setup()` có thể hơi dài dòng. May mắn thay, chúng chỉ cần thiết khi bạn không sử dụng các công cụ build. Khi sử dụng với Single-File Components (SFCs), bạn có thể tối giản chúng bằng `<script setup>`:
 
 ```vue
 <script setup>
@@ -153,11 +153,11 @@ function increment() {
 </template>
 ```
 
-[Try it in the Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlYWN0aXZlIH0gZnJvbSAndnVlJ1xuXG5jb25zdCBzdGF0ZSA9IHJlYWN0aXZlKHsgY291bnQ6IDAgfSlcblxuZnVuY3Rpb24gaW5jcmVtZW50KCkge1xuICBzdGF0ZS5jb3VudCsrXG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPlxuICAgIHt7IHN0YXRlLmNvdW50IH19XG4gIDwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=)
+[Thử ngay trong Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlYWN0aXZlIH0gZnJvbSAndnVlJ1xuXG5jb25zdCBzdGF0ZSA9IHJlYWN0aXZlKHsgY291bnQ6IDAgfSlcblxuZnVuY3Rpb24gaW5jcmVtZW50KCkge1xuICBzdGF0ZS5jb3VudCsrXG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPlxuICAgIHt7IHN0YXRlLmNvdW50IH19XG4gIDwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=)
 
-Top-level imports and variables declared in `<script setup>` are automatically usable in the template of the same component.
+Các import và các biến thượng cấp mà đã được khai báo trong `<script setup>` đều tự động khả dụng trong template của component đó.
 
-> For the rest of the guide, we will be primarily using SFC + `<script setup>` syntax for Composition API code examples, as that is the most common usage for Vue developers.
+> Kể từ giờ, mục chỉ dẫn sẽ sử dụng SFC và cú pháp `<script setup>` cho các đoạn mã ví dụ của Composition API, vì chúng là cách sử dụng phổ biến nhất với các người dùng Vue.
 
 </div>
 
