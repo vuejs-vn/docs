@@ -180,7 +180,7 @@ onMounted(() => {
 
 ### Nên chọn kiểu API nào?
 
-Đầu tiên, cả hai kiểu API đều có thể được sử dụng trong các trường hợp sử dụng phổ biến. Chúng là hai phương thức khác nhau được cung cấp bởi cùng một hệ thống. Thực ra, Options API được hiện thực dựa trên Composition API! Các khái niệm nền tản và kiến thức về Vue đều được dùng chung trong cả hai kiểu.
+Đầu tiên, cả hai kiểu API đều có thể được sử dụng trong các trường hợp thường gặp Chúng là hai phương thức khác nhau được cung cấp bởi cùng một hệ thống. Thực ra, Options API được xây dựng dựa trên Composition API! Các khái niệm nền tảng và kiến thức về Vue đều được dùng chung trong cả hai kiểu.
 
 Options API tập trung vào khái niệm của "component instance" (như `this` trong ví dụ trên), nó phù hợp với mô hình lập trình dựa trên class của những người dùng đến từ các ngôn ngữ lập trình hướng đối tượng. Nó cũng thân thiện hơn với người mới bằng cách trừu tượng hóa các chi tiết và thực thi sự tổ chức code thông qua các nhóm option.
 
