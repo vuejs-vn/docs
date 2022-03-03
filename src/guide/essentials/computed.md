@@ -255,7 +255,7 @@ Giờ khi bạn chạy `fullName.value = 'John Doe'`, setter sẽ được gọi
 
 ### Getter không nên có hiệu ứng phụ
 
-Điều quan trọng cần phải nhớ là hàm getter chỉ nên thực hiện duy nhất một việc tính toán đơn thuần và không có hiệu ứng phụ. Ví dụ, đừng tạo một request đồng bộ hoặc thay đổi DOM bên trong một hàm getter! Hãy nghĩ rằng thuộc tính computed như là một khai báo về cách để lấy giá trị dựa trên những giá trị khác - nó chỉ có trách nhiệm tính toán và trả về giá trị đó mà thôi. Ở phần sau của hướng dẫn, chúng ta sẽ thảo luận về cách để thực hiện một hiệu ứng phụ dựa trên sự thay đổi của state bằng [watchers](./watchers). 
+Điều quan trọng cần phải nhớ là hàm getter chỉ nên thực hiện duy nhất một việc tính toán đơn thuần và không có hiệu ứng phụ. Ví dụ, đừng tạo một request đồng bộ hoặc thay đổi DOM bên trong một hàm getter! Hãy xem thuộc tính computed như một khai báo về cách để lấy giá trị dựa trên những giá trị khác – nó chỉ có trách nhiệm tính toán và trả về giá trị đó mà thôi. Ở phần sau của hướng dẫn, chúng ta sẽ thảo luận về cách để thực hiện một hiệu ứng phụ dựa trên sự thay đổi của state bằng [watcher](./watchers). 
 
 ### Tránh thay đổi các giá trị đã tính
 
