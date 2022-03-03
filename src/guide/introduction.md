@@ -53,7 +53,7 @@ Ví dụ phía trên thể hiện hai tính năng của Vue:
 
 - **Declarative Rendering**: Vue sử dụng HTML để làm template, đồng thời mở rộng nó để cho phép chúng ta mô tả output HTML (sau khi render) dựa trên trạng thái của JavaScript.
 
-- **Reactivity**: Vue tự động theo dõi sự thay đổi của các giá trị trong JavaScript và cập nhật DOM một cách hiệu.
+- **Reactivity**: Vue tự động theo dõi sự thay đổi của các giá trị trong JavaScript và cập nhật DOM một cách hiệu quả.
 
 Có thể bạn đang có nhiều thắc mắc - đừng lo. Chúng tôi sẽ giải thích một cách rất chi tiết trong phần còn lại của tài liệu. Còn bây giờ, hãy cứ tiếp tục đọc để có một cái nhìn tổng quan về những gì Vue cung cấp.
 
