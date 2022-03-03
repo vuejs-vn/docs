@@ -259,4 +259,4 @@ Giờ khi bạn chạy `fullName.value = 'John Doe'`, setter sẽ được gọi
 
 ### Tránh thay đổi các giá trị đã tính
 
-Giá trị được trả về từ một thuộc tính computed là trạng thái được suy luận ra. Hãy nghĩ nó như là một snapshot tạm thời - mỗi khi các trạng thái mà nó phụ thuộc bị thay đổi, thì một snapshot mới được tạo ra. Sẽ không hợp lý nếu thay đổi một snapshot, vậy một giá trị được trả về bởi computed nên được xem là chỉ đọc và không bao giờ bị thay đổi - thay vào đó, cập nhật trạng thái mà nó phụ thuộc sẽ kích hoạt những tính toán mới.
+Giá trị được trả về từ một thuộc tính computed là trạng thái được suy luận ra. Hãy xem nó như một snapshot (ảnh chụp) tạm thời – mỗi khi các trạng thái mà nó phụ thuộc bị thay đổi, thì một snapshot mới được tạo ra. Việc thay đổi một snapshot là không hợp lý, vậy một giá trị được trả về bởi computed nên được xem là chỉ đọc và không bao giờ bị thay đổi – thay vào đó, hãy cập nhật trạng thái mà nó phụ thuộc để kích hoạt những tính toán mới.
