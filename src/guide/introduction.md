@@ -182,7 +182,7 @@ onMounted(() => {
 
 Đầu tiên, cả hai kiểu API đều có thể được sử dụng trong các trường hợp thường gặp Chúng là hai phương thức khác nhau được cung cấp bởi cùng một hệ thống. Thực ra, Options API được xây dựng dựa trên Composition API! Các khái niệm nền tảng và kiến thức về Vue đều được dùng chung trong cả hai kiểu.
 
-Options API tập trung vào khái niệm của "component instance" (như `this` trong ví dụ trên), nó phù hợp với mô hình lập trình dựa trên class của những người dùng đến từ các ngôn ngữ lập trình hướng đối tượng. Nó cũng thân thiện hơn với người mới bằng cách trừu tượng hóa các chi tiết và thực thi sự tổ chức code thông qua các nhóm option.
+Options API tập trung vào khái niệm của "component instance" (như `this` trong ví dụ trên), phù hợp với mô hình lập trình dựa trên class của những người dùng đến từ các ngôn ngữ lập trình hướng đối tượng. Nó cũng thân thiện hơn với người mới bằng cách trừu tượng hóa các chi tiết và thực thi sự tổ chức code thông qua các nhóm option.
 
 Composition API tập trung vào việc khai báo các biến reactive trực tiếp trong phạm vi của một hàm và sử dụng nó trong nhiều hàm khác nhau để giải quyết các vấn đề phức tạp. API này uyển chuyển hơn và đòi hỏi kiến thức về cách reactive hoạt động trong Vue để có thể được sử dụng một cách hiệu quả. Đổi lại, tính linh hoạt của nó cho phép sử dụng nhiều pattern mạnh mẽ để tổ chức và sử dụng lại logic.
 
