@@ -1,4 +1,4 @@
-# Bạn làm được rồi!
+# Hoàn tất!
 
 Bạn đã hoàn thành phần hướng dẫn!
 
