@@ -2,7 +2,7 @@
 
 Bạn đã hoàn thành phần hướng dẫn!
 
-Tại thời điểm này, bạn nên có một ý tưởng tốt về việc làm việc với Vue sẽ như thế nào. Tuy nhiên, chúng tôi đã trình bày rất nhiều thứ thực sự nhanh chóng và bao quát, vì vậy hãy chắc chắn tiếp tục học hỏi! Bước tiếp theo, bạn có thể:
+Đến đây, bạn hẳn đã có một ý niệm tương đối về làm việc với Vue. Tuy nhiên, vì chúng ta đã lướt qua khá nhiều thứ mà không bàn sâu vào chi tiết, bạn nên học thêm nữa. T�iếp theo, bạn có thể:
 
 - Thiết lập một dự án Vue thực trên máy của bạn bằng cách làm theo [Bắt đầu nhanh](/guide/quick-start.html).
 
