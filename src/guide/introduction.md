@@ -184,7 +184,7 @@ onMounted(() => {
 
 Options API tập trung vào khái niệm của "component instance" (như `this` trong ví dụ trên), nó phù hợp với mô hình lập trình dựa trên class của những người dùng đến từ các ngôn ngữ lập trình hướng đối tượng. Nó cũng thân thiện hơn với người mới bằng cách trừu tượng hóa các chi tiết và thực thi sự tổ chức code thông qua các nhóm option.
 
-Composition API tập trung vào việc khai báo các biến reactive trực tiếp trong phạm vi của một function, và sử dụng nó trong nhiều function khác nhau để giải quyết các vấn đề phức tạp. Nó ít khuôn mẫu, và đòi hỏi hiểu biết về cách mà reactive hoạt động trong Vue để có thể được sử dụng một cách hiệu quả. Đổi lại, tính linh hoạt của nó cho phép sử dụng nhiều pattern mạnh mẽ để tổ chức và sử dụng lại logic.
+Composition API tập trung vào việc khai báo các biến reactive trực tiếp trong phạm vi của một hàm và sử dụng nó trong nhiều hàm khác nhau để giải quyết các vấn đề phức tạp. API này uyển chuyển hơn và đòi hỏi kiến thức về cách reactive hoạt động trong Vue để có thể được sử dụng một cách hiệu quả. Đổi lại, tính linh hoạt của nó cho phép sử dụng nhiều pattern mạnh mẽ để tổ chức và sử dụng lại logic.
 
 Bạn có thể tìm hiểu thêm về sự so sánh giữa hai kiểu API này và những lợi ích tiềm năng của Composition API tại trang [Hỏi đáp về Composition API](/guide/extras/composition-api-faq).
 
