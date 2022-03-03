@@ -192,7 +192,7 @@ Tại sao chúng ta cần cache? Giả sử ta có một thuộc tính computed 
 
 ## Thuộc tính computed có thể ghi
 
-Mặc định thì những thuộc tính computed chỉ có getter. Nếu bạn cố ghi giá trị mới vào một thuộc tính computed, bạn sẽ nhận được cảnh báo. Trong các trường hợp hiếm hoi mà bạn cần một thuộc tính computed có thể ghi, bạn có thể cung cấp cả getter và setter cho nó:
+Mặc định thì những thuộc tính computed là chỉ đọc (chỉ có getter). Nếu bạn cố ghi giá trị mới vào một thuộc tính computed, bạn sẽ nhận được một cảnh báo runtime. Trong các trường hợp hãn hữu bạn cần một thuộc tính computed có thể ghi, bạn có thể cung cấp cả getter và setter cho nó:
 
 <div class="options-api">
 
