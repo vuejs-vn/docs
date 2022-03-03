@@ -251,7 +251,7 @@ Giờ khi bạn chạy `fullName.value = 'John Doe'`, setter sẽ được gọi
 
 </div>
 
-## Best Practices
+## Lời khuyên khi dùng thuộc tính computed 
 
 ### Getter không nên có hiệu ứng phụ
 
