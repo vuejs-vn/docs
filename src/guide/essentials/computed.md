@@ -46,7 +46,7 @@ Và chúng ta muốn hiển thị những thông điệp khác nhau dựa trên 
 <span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span>
 ```
 
-Tại điểm này, template đang trở nên lộn xộn. Khi nhìn vào nó, ta phải mất hết một giây để thấy rằng nó thực hiện một tính toán dựa trên `author.books`. Quan trọng hơn, Chúng ta không muốn code lặp lại nếu ta cần thêm tính toán này vào template nhiều lần.
+Tại điểm này, template �bắt đầu trở nên lộn xộn. �Ta phải mất một chút mới nhận ra là template thực hiện một tính toán dựa trên `author.books`. Quan trọng hơn, chúng ta không muốn lặp lại code nếu cần thêm tính toán này vào template nhiều lần.
 
 Đó là lý do vì sao đối với những logic phức tạp có kèm dữ liệu reactive, bạn nên sử dụng một **thuộc tính computed**. Đây là ví dụ tương tự nhưng được viết lại:
 
