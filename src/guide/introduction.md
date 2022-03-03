@@ -63,24 +63,24 @@ Phần còn lại của tài liệu đòi hỏi một số kinh nghiệm với H
 
 ## Một framework linh động
 
-Vue là một framework và hệ sinh thái của nó bao gồm hầu như đầy đủ các các tính năng cần thiết trong quá trình phát triển frontend. Nhưng môi trường web thì cực kì đa dạng - những thứ chúng ta xây dựng trên web có thể khác nhau một cách đáng kể về hình thức và quy mô. Với suy nghĩ đó, Vue được thiết kế để trở nên linh hoạt và có thể áp dụng từng phần (dần dần). Tùy thuộc vào từng trường hợp, Vue có thể được sử dụng theo những cách khác nhau:
+Vue vừa là một framework vừa là một hệ sinh thái (ecosystem) cung cấp gần như �mọi thứ cần thiết trong quá trình phát triển frontend. Nhưng môi trường web cực kì đa dạng - những thứ chúng ta xây dựng trên web có thể khác nhau một cách đáng kể về hình thức và quy mô. Do đó, Vue được thiết kế theo hướng linh hoạt và có thể áp dụng từng phần (dần dần). Tùy thuộc vào từng trường hợp, Vue có thể được sử dụng theo những cách khác nhau:
 
 - Cải thiện HTML tĩnh mà không cần build
-- Nhúng vào page như là một Web Component
-- Single-Page Application (SPA)
+- Nhúng vào page dưới dạng một Web Component
+- Ứng dụng đơn trang (SPA)
 - Fullstack / Server-Side-Rendering (SSR)
 - JAMStack / Static-Site-Generation (SSG)
 - Xây dựng ứng dụng desktop, mobile, WebGL hoặc thậm chí là terminal
 
-Nếu bạn thấy những khái niệm này đáng sợ, đừng lo lắng! Phần hướng dẫn và chỉ dẫn này chỉ yêu cầu kiến thức cơ bản về HTML và JavaScript và bạn sẽ có thể làm theo mà không cần phải là chuyên gia về bất kỳ thứ nào trong số chúng.
+Nếu bạn thấy những khái niệm này có vẻ to tát, đừng lo! Phần hướng dẫn này chỉ yêu cầu kiến thức cơ bản về HTML và JavaScript, và bạn sẽ có thể làm theo mà không cần phải là chuyên gia gì cả.
 
-Nếu bạn là một developer có kinh nghiệm, quan tâm đến cách tốt nhất để tích hợp Vue vào stack của mình hoặc bạn tò mò về các cách sử dụng trên, chúng tôi sẽ thảo luận chi tiết hơn về chúng trong [Cách sử dụng Vue](/guide/extras/ways-of-using-vue).
+Nếu bạn là một lập trình viên có kinh nghiệm và muốn tìm hiểu cách tốt nhất để tích hợp Vue vào stack của mình, hoặc nếu bạn tò mò về các thuật ngữ trên đây, chúng ta sẽ thảo luận chi tiết hơn  trong [Cách sử dụng Vue](/guide/extras/ways-of-using-vue).
 
-Bất chấp tính linh hoạt, kiến thức cốt lõi về cách Vue hoạt động áp dụng được cho tất cả các trường hợp trên. Ngay cả khi bạn chỉ là người mới bắt đầu, kiến thức thu được trong quá học này sẽ vẫn hữu ích khi bạn thực hiện các mục tiêu tham vọng hơn trong tương lai. Nếu bạn đã có nhiều kinh nghiệm, bạn có thể chọn cách tối ưu để tận dụng Vue dựa trên các vấn đề bạn đang cố gắng giải quyết, trong khi vẫn giữ nguyên năng suất. Đây là lý do tại sao chúng tôi gọi Vue là "framework linh động": đó là một framework có thể phát triển cùng với bạn và thích ứng với nhu cầu của bạn.
+�Dù rất linh hoạt, kiến thức cốt lõi về cách Vue hoạt động có thể được áp dụng cho tất cả các trường hợp trên. Ngay cả khi bạn chỉ là người mới bắt đầu, kiến thức thu được trong quá trình học này sẽ vẫn hữu ích khi bạn thực hiện các mục tiêu tham vọng hơn trong tương lai. Nếu bạn đã có nhiều kinh nghiệm, bạn có thể chọn cách tối ưu để tận dụng Vue dựa trên các vấn đề bạn đang cố gắng giải quyết mà vẫn giữ nguyên năng suất. Đây là lý do tại sao chúng tôi gọi Vue là "framework linh động": một framework có thể phát triển cùng với bạn và đáp ứng mọi nhu cầu của bạn.
 
 ## Single-File Components
 
-Trong hầu hếu những dự án Vue có dùng công cụ build, chúng tôi tạo ra những component sử dụng định dạng giống với HTML gọi là **Single-File Component** (còn được biết đến là các file `*.vue`, viết tắt là **SFC**). Một SFC, như tên của nó, đóng gói các thành phần của một component như logic (JavaScript), template (HTML), và style (CSS) trong một file duy nhất. Đây là ví dụ phía trên, nhưng được viết bằng SFC:
+Trong hầu hết những dự án Vue có dùng công cụ build, chúng ta tạo ra những component sử dụng một định dạng giống với HTML gọi là **Single-File Component** (còn được biết đến là các file `*.vue`, viết tắt là **SFC**). Một SFC, như tên của nó, đóng gói các thành phần của một component — logic (JavaScript), template (HTML), và style (CSS) — vào một file duy nhất. Đây là ví dụ phía trên được viết với định dạng SFC:
 
 ```vue
 <script>
@@ -104,15 +104,15 @@ button {
 </style>
 ```
 
-SFC là một tính năng đặt trưng của Vue, và nó được khuyến khích để tạo các component trong Vue **nếu** trường hợp sử dụng của bạn có cài đặt công cụ build. Bạn có thể tìm hiểu thêm về [cách và lý do dùng SFC](/guide/scaling-up/sfc) trong phần riêng của nó - nhưng hiện tại, chỉ cần biết rằng Vue sẽ xử lý việc cài đặt công cụ build cho bạn.
+SFC là một tính năng đặc trưng của Vue, và nó được khuyến khích để tạo các component trong Vue **nếu** trường hợp sử dụng của bạn có cài đặt công cụ build. Bạn có thể tìm hiểu thêm về [cách và lý do dùng SFC](/guide/scaling-up/sfc) trong một phần riêng biệt — nhưng giờ thì chỉ cần biết rằng Vue sẽ xử lý việc cài đặt công cụ build cho bạn.
 
 ## Các kiểu API
 
-Vue component có thể được viết bằng hai kiểu API khác nhau: **Options API** và **Composition API**.
+Component Vue có thể được viết bằng hai kiểu API khác nhau: **Options API** và **Composition API**.
 
 ### Options API
 
-Với Option API, chúng ta định nghĩa logic của component bằng cách sử dụng các thuộc tính của một option object, ví dụ như `data`, `methods`, và `mounted`. Các function nằm trong option có thể truy cập tới các thuộc tính khác của option đó thông qua `this`, `this` trỏ tới instance của component.
+Với Options API, chúng ta định nghĩa logic của component bằng cách sử dụng các thuộc tính của một option object, ví dụ như `data`, `methods`, và `mounted`. Các function nằm trong option có thể truy cập tới các thuộc tính khác của option đó thông qua `this`, instance của component.
 
 ```vue
 <script>
@@ -124,7 +124,7 @@ export default {
     }
   },
   
-  // methods là những function sẽ thay đổi state và kích hoạt các cập nhật (template, watch, computed, ...).
+  // Các method là những hàm sẽ thay đổi state và kích hoạt các cập nhật (template, watch, computed, ...).
   // Có thể dùng chúng để lắng nghe event trong template.
   methods: {
     increment() {
@@ -132,8 +132,8 @@ export default {
     }
   },
   
-  // Lifecycle hooks được được gọi ở các giai đoạn khác trong trong vòng đời của component.
-  // Function dưới này sẽ được gọi khi component được mount.
+  // Các lifecycle hook được được gọi ở các giai đoạn khác nhau trong trong vòng đời của component.
+  // Hàm dưới đây sẽ được gọi khi component được mount.
   mounted() {
     console.log(`The initial count is ${this.count}.`)
   }
@@ -149,7 +149,7 @@ export default {
 
 ### Composition API
 
-Với Composition API, chúng ta định nghĩa logic của component bằng cách sử dụng các API được import. Trong SFCs, Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup). Thuộc tính `setup` là một gợi ý giúp Vue thực hiện thêm một số chuyển đổi khi biên dịch, cho phép chúng ta sử dụng Composition API với ít code hơn. Ví dụ, các function và variable được import hoặc khai báo trong ngữ cảnh hiện tại có thể được dùng trực tiếp trong template.
+Với Composition API, chúng ta định nghĩa logic của component bằng cách sử dụng các API được import. Trong SFCs, Composition API thường được sử dụng với [`<script setup>`](/api/sfc-script-setup). Thuộc tính `setup` gợi ý cho Vue thực hiện thêm một số chuyển đổi khi biên dịch, cho phép chúng ta sử dụng Composition API với ít code hơn. Ví dụ, các hàm và biến được import hoặc khai báo trong ngữ cảnh hiện tại có thể được dùng trực tiếp trong template.
 
 Đây là component tương tự như trên, với cùng tempalte, nhưng sử dụng Composition API và `<script setup>`:
 
