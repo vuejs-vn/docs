@@ -14,7 +14,7 @@ footer: false
 
 Vue (phát âm: /vjuː/, giống **view**) là một framework JavaScript dùng để xây dựng giao diện người dùng. Vue xây dựng trên nền tảng HTML, CSS và JavaScript, cung cấp mô hình lập trình khai báo (declarative) và dựa trên component (component-based), giúp bạn phát triển giao diện người dùng — bất kể là đơn giản hay phức tạp — một cách hiệu quả.
 
-Đây là một ví dụ đơn giản:
+Đây là một ví dụ tối giản:
 
 ```js
 import { createApp } from 'vue'
