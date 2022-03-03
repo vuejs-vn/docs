@@ -87,7 +87,7 @@ export default {
 
 Thử thay đổi giá trị của mảng `books` trong `data` của app và bạn sẽ thấy `publishedBooksMessage` thay đổi tương ứng.
 
-Bạn có thể ràng buộc các thuộc tính computed vào template giống bình thường. Vue ý thức được rằng `this.publishedBooksMessage` phụ thuộc vào `this.author.books`, cho nên nó sẽ cập nhật mọi sự ràng buộc vào `this.publishedBooksMessage` khi `this.author.books` thay đổi.
+Bạn có thể ràng buộc (data-bind) các thuộc tính computed vào template giống bình thường. Vue biết rằng `this.publishedBooksMessage` phụ thuộc vào `this.author.books` và sẽ cập nhật mọi ràng buộc phụ thuộc vào `this.publishedBooksMessage` khi `this.author.books` thay đổi.
 
 Xem thêm: [Typing Computed Properties](/guide/typescript/options-api.html#typing-computed-properties) <sup class="vt-badge ts" />
 
