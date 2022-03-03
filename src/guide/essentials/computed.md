@@ -48,7 +48,7 @@ Và chúng ta muốn hiển thị những thông điệp khác nhau dựa trên 
 
 Tại điểm này, template �bắt đầu trở nên lộn xộn. �Ta phải mất một chút mới nhận ra là template thực hiện một tính toán dựa trên `author.books`. Quan trọng hơn, chúng ta không muốn lặp lại code nếu cần thêm tính toán này vào template nhiều lần.
 
-Đó là lý do vì sao đối với những logic phức tạp có kèm dữ liệu reactive, bạn nên sử dụng một **thuộc tính computed**. Đây là ví dụ tương tự nhưng được viết lại:
+Đó là lý do vì sao đối với những logic phức tạp có kèm dữ liệu reactive, bạn nên sử dụng một **thuộc tính computed**. Đây là ví dụ trên được viết lại:
 
 <div class="options-api">
 
