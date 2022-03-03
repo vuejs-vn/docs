@@ -10,4 +10,4 @@ Bạn đã hoàn thành phần hướng dẫn!
 
 - Xem thêm nhiều bài tập thực tế hơn [Ví dụ](/examples/).
 
-Chúng tôi không thể chờ đợi để xem những gì bạn xây dựng tiếp theo!
+Chúng tôi rất nóng lòng chờ đợi những thứ bạn sẽ xây dựng tiếp theo!
