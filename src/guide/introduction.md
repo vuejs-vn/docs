@@ -4,7 +4,7 @@ footer: false
 
 # Giới thiệu
 
-:::info Bạn đang đọc tài liệu cho Vue 3!
+:::info Bạn đang đọc tài liệu của Vue 3!
 
 - Tài liệu của Vue 2 đã được chuyển về trang [v2.vuejs.org](https://v2.vuejs.org/).
 - Xem hướng dẫn nâng cấp từ Vue 2: [Hướng dẫn nâng cấp](https://v3-migration.vuejs.org/).
