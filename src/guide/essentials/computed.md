@@ -162,7 +162,7 @@ function calculateBooksMessage() {
 
 </div>
 
-Thay vì một thuộc tính computed, chúng ta có thể định nghĩa một hàm tương tự để làm một phương thức. Và kết quả cuối cùng, hai cách tiếp cận đều cho kết quả tương tự. Tuy nhiên sự khác biệt là **các thuộc tính computed được cache dựa trên những sự phụ thuộc có tính reactive của nó.** Một thuộc tính computed sẽ chỉ được tính lại khi một số sự phụ thuộc của nó thay đổi. Điều này có nghĩa là miễn `author.books` không thay đổi, thì mọi lần truy cập vào `publishedBooksMessage` đều ngay lập tức trả về kết quả đã được tính toán trước đó mà không chạy lại hàm getter.
+Chúng ta có thể định nghĩa chính hàm của thuộc tính computed dạng một phương thức. Hai cách tiếp cận đều cho kết quả hoàn toàn như nhau. Tuy nhiên, điều khác biệt ở đây là **các thuộc tính computed được cache dựa trên những sự phụ thuộc có tính reactive của nó.** Một thuộc tính computed sẽ chỉ được tính lại khi một số sự phụ thuộc của nó thay đổi. Điều này có nghĩa là miễn `author.books` không thay đổi, thì mọi lần truy cập vào `publishedBooksMessage` đều ngay lập tức trả về kết quả đã được tính toán trước đó mà không chạy lại hàm getter.
 
 Điều này cũng có nghĩa là thuộc tính computed dưới đây sẽ không bao giờ được cập nhật, bởi vì `Date.now()` không phải là một sự phụ thuộc có tính reactive.
 
