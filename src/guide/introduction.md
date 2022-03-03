@@ -206,7 +206,7 @@ Hãy xem qua trang [Hỏi đáp](/about/faq).
 
 ## Chọn hướng học tập
 
-Những lập trình viên khác nhau có những phong cách học tập khác nhau. Hãy tự nhiên chọn con đường học tập phù hợp với sơ thích cá nhân - mặc dù chúng tôi khuyến nghị nên đọc hết hếu có thể!
+Những lập trình viên khác nhau có những phong cách học tập khác nhau. Hãy tự nhiên chọn con đường học tập phù hợp với sở thích cá nhân - mặc dù chúng tôi khuyến nghị nên đọc hết hếu có thể!
 
 <div class="vt-box-container next-steps">
   <a class="vt-box" href="/tutorial/">
