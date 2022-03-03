@@ -8,6 +8,6 @@ Bạn đã hoàn thành phần hướng dẫn!
 
 - Xem qua [Hướng dẫn chính](/guide/essentials/application.html), bao gồm tất cả các chủ đề mà chúng ta vừa học một cách tường tận hơn, và thêm nhiều chủ đề khác.
 
-- Xem thêm nhiều bài tập thực tế hơn [Ví dụ](/examples/).
+- Xem thêm các [Ví dụ](/examples/).
 
 Chúng tôi rất nóng lòng chờ đợi những thứ bạn sẽ xây dựng tiếp theo!
