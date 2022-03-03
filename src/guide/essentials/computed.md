@@ -89,7 +89,7 @@ Thử thay đổi giá trị của mảng `books` trong `data` của app và b�
 
 Bạn có thể ràng buộc (data-bind) các thuộc tính computed vào template giống bình thường. Vue biết rằng `this.publishedBooksMessage` phụ thuộc vào `this.author.books` và sẽ cập nhật mọi ràng buộc phụ thuộc vào `this.publishedBooksMessage` khi `this.author.books` thay đổi.
 
-Xem thêm: [Typing Computed Properties](/guide/typescript/options-api.html#typing-computed-properties) <sup class="vt-badge ts" />
+Xem thêm: [Đặt kiểu cho computed property](/guide/typescript/options-api.html#typing-computed-properties) <sup class="vt-badge ts" />
 
 </div>
 
