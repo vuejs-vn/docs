@@ -202,7 +202,7 @@ Bạn không nhất thiết phải sử dụng cố định một kiểu duy nh�
 
 ## Bạn vẫn còn thắc mắc?
 
-Hãy xem qua trang [Hỏi Đáp](/about/faq).
+Hãy xem qua trang [Hỏi đáp](/about/faq).
 
 ## Chọn hướng học tập
 
