@@ -85,7 +85,7 @@ export default {
 
 Ở đây chúng ta đã khai báo một thuộc tính computed `publishedBooksMessage`.
 
-Thử thay đổi giá trị của array `books` trong `data` của app và bạn sẽ thấy cách mà `publishedBooksMessage` thay đổi tương ứng.
+Thử thay đổi giá trị của mảng `books` trong `data` của app và bạn sẽ thấy `publishedBooksMessage` thay đổi tương ứng.
 
 Bạn có thể ràng buộc các thuộc tính computed vào template giống bình thường. Vue ý thức được rằng `this.publishedBooksMessage` phụ thuộc vào `this.author.books`, cho nên nó sẽ cập nhật mọi sự ràng buộc vào `this.publishedBooksMessage` khi `this.author.books` thay đổi.
 
