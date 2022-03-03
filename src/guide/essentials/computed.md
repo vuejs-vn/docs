@@ -188,7 +188,7 @@ const now = computed(() => Date.now())
 
 Trong khi đó, một lệnh gọi phương thức sẽ **luôn** chạy hàm đó bất cứ khi nào việc render lại xảy ra.
 
-Tại sao chúng ta cần cache? Tưởng tượng rằng chúng ta có một thuộc tính computed nặng nề là `list`, nó đòi hỏi phải lặp qua một array lớn và thực hiện rất nhiêu phép tính. Sau đó, chúng ta có thể có những thuộc tính computed khác phụ thuộc vào `list`. Nếu không có cache, chúng ta sẽ phải thực thi hàm getter của `list` nhiều lần hơn mức cần thiết! Trong những trường hợp bạn không muốn cache, hãy dùng lệnh gọi phương thức.
+Tại sao chúng ta cần cache? Giả sử ta có một thuộc tính computed là `list`, thuộc tính này đòi hỏi lặp qua một mảng khổng lồ và thực hiện rất nhiều phép tính. Tiếp theo đó, chúng ta có thể có những thuộc tính computed khác phụ thuộc vào `list`. Nếu không có cache, chúng ta sẽ phải thực thi hàm getter của `list` nhiều hơn mức cần thiết rất nhiều! Trong những trường hợp bạn không muốn cache, hãy sử dụng phương thức thay vì thuộc tính computed.
 
 ## Thuộc tính computed có thể ghi
 
