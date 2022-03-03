@@ -126,7 +126,7 @@ const publishedBooksMessage = computed(() => {
 
 Một thuộc tính computed sẽ tự động theo dõi các phụ thuộc có tính reactive. Vue biết rằng giá trị của `publishedBooksMessage` phụ thuộc vào `author.books`, nên nó sẽ cập nhật mọi ràng buộc vào `publishedBooksMessage` khi `author.books` thay đổi.
 
-Xem thêm: [Typing Computed](/guide/typescript/composition-api.html#typing-computed) <sup class="vt-badge ts" />
+Xem thêm: [Đặt kiểu cho thuộc tính computed](/guide/typescript/composition-api.html#typing-computed) <sup class="vt-badge ts" />
 
 </div>
 
