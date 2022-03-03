@@ -1,13 +1,13 @@
-# You Did It!
+# Hoàn tất!
 
-You have finished the tutorial!
+Bạn đã hoàn thành phần hướng dẫn!
 
-At this point, you should have a good idea of what it's like to work with Vue. However, we covered a lot of things really fast and glossed over the details, so definitely keep learning! As a next step, you can:
+Đến đây, bạn hẳn đã có một ý niệm tương đối về làm việc với Vue. Tuy nhiên, vì chúng ta đã lướt qua khá nhiều thứ mà không bàn sâu vào chi tiết, bạn nên học thêm nữa. T�iếp theo, bạn có thể:
 
-- Set up a real Vue project on your machine by following the [Quick Start](/guide/quick-start.html).
+- Thiết lập một dự án Vue thực trên máy của bạn bằng cách làm theo [Bắt đầu nhanh](/guide/quick-start.html).
 
-- Go through the [Main Guide](/guide/essentials/application.html), which covers all the topics we learned so far in greater details, and much more.
+- Xem qua [Hướng dẫn chính](/guide/essentials/application.html), bao gồm tất cả các chủ đề mà chúng ta vừa học một cách tường tận hơn, và thêm nhiều chủ đề khác.
 
-- Check out some more practical [Examples](/examples/).
+- Xem thêm các [Ví dụ](/examples/).
 
-We can't wait to see what you build next!
+Chúng tôi rất nóng lòng chờ đợi những thứ bạn sẽ xây dựng tiếp theo!
