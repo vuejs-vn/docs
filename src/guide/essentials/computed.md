@@ -130,7 +130,7 @@ Xem thêm: [Đặt kiểu cho thuộc tính computed](/guide/typescript/composit
 
 </div>
 
-## Computed Caching vs Methods
+## So sánh computed được cache và method
 
 Bạn có thể đã để ý rằng chúng ta có thể đạt được kết quả tương tự bằng cách dùng một lệnh gọi phương thức trong biểu thức:
 
