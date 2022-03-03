@@ -2,7 +2,7 @@
 
 ## Ví dụ cơ bản
 
-Các biểu thức trong template thì rất tiện lợi, nhưng chỉ đúng cho các tác vụ đơn giản. Đặt quá nhiều logic vào template có thể làm nó phình to ra và khó bảo trì. Ví dụ, nếu chúng ta có object với một một array bên trong nó:
+Các biểu thức (expression) trong template rất tiện lợi, nhưng chỉ nên dùng cho các tác vụ đơn giản. Đặt quá nhiều logic có thể template phình to ra và khó bảo trì. Ví dụ, nếu chúng ta có object trong chứa một mảng:
 
 <div class="options-api">
 
