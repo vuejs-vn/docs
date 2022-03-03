@@ -124,7 +124,7 @@ const publishedBooksMessage = computed(() => {
 
 Ở đây chúng ta đã khai báo một thuộc tính computed `publishedBooksMessage`. Hàm `computed()` nhận vào một hàm getter (hàm dùng để lấy giá trị), và giá trị được trả về là một **computed ref (tham chiếu)**. Tương tự như các ref thông thường, bạn có thể truy cập giá trị của nó thông qua `publishedBooksMessage.value`. Khi dùng trong template, `ref`sẽ được unwrap tự động nên bạn có thể tham chiếu tới nó mà không cần `.value`.
 
-Một thuộc tính computed sẽ tự động theo dõi các sự phụ thuộc có tính reactive. Vue ý thức rằng sự tính toán của `publishedBooksMessage` phụ thuộc vào `author.books`, nên nó sẽ cập nhật mọi ràng buộc vào `publishedBooksMessage` khi `author.books` thay đổi.
+Một thuộc tính computed sẽ tự động theo dõi các phụ thuộc có tính reactive. Vue biết rằng giá trị của `publishedBooksMessage` phụ thuộc vào `author.books`, nên nó sẽ cập nhật mọi ràng buộc vào `publishedBooksMessage` khi `author.books` thay đổi.
 
 Xem thêm: [Typing Computed](/guide/typescript/composition-api.html#typing-computed) <sup class="vt-badge ts" />
 
