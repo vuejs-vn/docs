@@ -55,7 +55,7 @@ Ví dụ phía trên thể hiện hai tính năng của Vue:
 
 - **Reactivity**: Vue tự động theo dõi sự thay đổi của các giá trị trong JavaScript và cập nhật DOM một cách hiệu quả.
 
-Có thể bạn đang có nhiều thắc mắc - đừng lo. Chúng tôi sẽ giải thích một cách rất chi tiết trong phần còn lại của tài liệu. Còn bây giờ, hãy cứ tiếp tục đọc để có một cái nhìn tổng quan về những gì Vue cung cấp.
+Có thể bạn đang có nhiều thắc mắc - đừng lo. Chúng ta sẽ đi vào chi tiết trong phần còn lại của tài liệu. Còn bây giờ, cứ tiếp tục đọc để có một cái nhìn tổng quan về những gì Vue cung cấp.
 
 :::tip Yêu cầu
 Phần còn lại của tài liệu đòi hỏi một số kinh nghiệm với HTML, CSS và JavaScript. Nếu bạn hoàn toàn chưa có kinh nghiệm gì với frontend, thì việc tìm hiểu ngay một framework không phải là lựa chọn tốt nhất lúc này - hãy tìm hiểu các kiến thức cơ bản trước rồi quay lại sau! Kinh nghiệm với các framework khác có thể sẽ hữu ích, nhưng không bắt buộc.
