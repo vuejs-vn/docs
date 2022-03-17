@@ -1,10 +1,8 @@
-# Render List
+# Render danh sách
 
 ## `v-for`
 
-We can use the `v-for` directive to render a list of items based on an array. The `v-for` directive requires a special syntax in the form of `item in items`, where `items` is the source data array and `item` is an **alias** for the array element being iterated on:
-
-Chúng ta có thể sử dụng `v-for`
+Chúng ta có thể dùng chỉ thị `v-for` để render một danh sách các mục dựa trên một mảng. Chỉ thị `v-for` yêu cầu một cú pháp đặt biệt trong dạng `item in items`, với `items` là một mảng chứa dữ liệu và `item` là một **biệt danh** cho phần tử của mảng được lặp lại:
 
 <div class="composition-api">
 
@@ -32,7 +30,7 @@ data() {
 </li>
 ```
 
-Inside the `v-for` scope, template expressions have access to all parent scope properties. In addition, `v-for` also supports an optional second alias for the index of the current item:
+Bên trong ngữ cảnh `v-for`, biểu thứ template có quyền truy cập vào tất cả thuộc tính trong ngữ cảnh cha của nó. Hơn nữa, `v-for` còn hỗ trợ một biểu thức phụ thuộc cho phần tử hiện tại của mảng:
 
 <div class="composition-api">
 
@@ -84,6 +82,8 @@ const items = [{ message: 'Foo' }, { message: 'Bar' }]
 
 The variable scoping of `v-for` is similar to the following JavaScript:
 
+Phạm vi giá trị của `v-for` cũng tương tự như trong đoạn JavaScript sau:
+
 ```js
 const parentMessage = 'Parent'
 const items = [
@@ -99,6 +99,8 @@ items.forEach((item, index) => {
 
 Notice how the `v-for` value matches the function signature of the `forEach` callback. In fact, you can use destructuring on the `v-for` item alias similar to destructuring function arguments:
 
+Để ý cách giá trị `v-for` khớp với hình thức của function callback của `forEach`. Thực ra, bạn có thể sử dụng cú pháp phân rã cho phần tử trong `v-for` tương tự như phân rã các tham số của function:
+
 ```vue-html
 <li v-for="{ message } in items">
   {{ message }}
@@ -112,6 +114,8 @@ Notice how the `v-for` value matches the function signature of the `forEach` cal
 
 For nested `v-for`, scoping also works similar to nested functions. Each `v-for` scope has access to parent scopes:
 
+Ngữ cảnh củua các `v-for` lồng nhau cũng tương tự như các function lồng nhau. Mỗi ngữ cảnh của `v-for` có quyền truy cập vào ngữ cảnh cha của nó: 
+
 ```vue-html
 <li v-for="item in items">
   <span v-for="childItem in item.children">
@@ -122,6 +126,8 @@ For nested `v-for`, scoping also works similar to nested functions. Each `v-for`
 
 You can also use `of` as the delimiter instead of `in`, so that it is closer to JavaScript's syntax for iterators:
 
+Bạn cũng có thể dùng `of` thay cho `in`, như vậy nó sẽ gần với cú pháp của JavaScript hơn:
+
 ```vue-html
 <div v-for="item of items"></div>
 ```
@@ -129,6 +135,8 @@ You can also use `of` as the delimiter instead of `in`, so that it is closer to 
 ## `v-for` with an Object
 
 You can also use `v-for` to iterate through the properties of an object.
+
+Bạn cũng có thể sử dụng `v-for` để duyệt qua các thuộc tính của một object:
 
 <div class="composition-api">
 
@@ -166,6 +174,8 @@ data() {
 ```
 
 You can also provide a second alias for the property's name (a.k.a. key):
+
+Bạn còn có thể cung cấp một alia thứ hai đại diện cho tên của thuộc tính (hay key):
 
 ```vue-html
 <li v-for="(value, key) in myObject">
