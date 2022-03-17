@@ -185,6 +185,8 @@ Bạn còn có thể cung cấp một alia thứ hai đại diện cho tên củ
 
 And another for the index:
 
+Và một cái khác cho index:
+
 ```vue-html
 <li v-for="(value, key, index) in myObject">
   {{ index }}. {{ key }}: {{ value }}
@@ -204,6 +206,8 @@ And another for the index:
 
 :::tip Note
 When iterating over an object, the order is based on the enumeration order of `Object.keys()`, which isn't guaranteed to be consistent across JavaScript engine implementations.
+
+Khi duyệt qua một object, thứ tự được dựa trên thứ tự của tập `Object.keys()`, cái mà không chắc rằng sẽ thống nhất giữa các engine Javascript khác nhau.
 :::
 
 ## `v-for` with a Range
