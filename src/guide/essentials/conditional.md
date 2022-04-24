@@ -1,4 +1,4 @@
-# Hiển thị có diều kiện
+# Hiển thị có điều kiện
 
 <script setup>
 import { ref } from 'vue'
