@@ -94,7 +94,7 @@ Sự khác nhau đó là một phần tử với `v-show` sẽ luôn hiển th�
 
 `v-if` là hiển thị có điều kiện "thực(real)" vì nó đảm bảo rằng các xử lý sự kiện và các thành phần con bên trong khối điều kiện được hủy và tạo lại trong quá trình chuyển đổi.
 
-`v-if` cũng **lazy**: nếu điều kiện là sai khi hiển thị lần đầu, nó sẽ không làm gì cả - khối điều kiện sẽ không được hiển thị cho đến khi điều kiện đúng lần đầu tiên.
+Đồng thời, `v-if` cũng **lười biếng** (lazy): nếu điều kiện trả về giá trị sai (falsy) khi hiển thị lần đầu, nó sẽ không làm gì cả - khối điều kiện sẽ không được render cho đến khi điều kiện trở thành đúng lần đầu tiên.
 
 Để so sánh, `v-show` đơn giản hơn nhiều – phần tử luôn được render bất kể điều kiện ban đầu và được kích hoạt bằng CSS.
 
