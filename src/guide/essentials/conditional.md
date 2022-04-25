@@ -62,11 +62,11 @@ Như tên gọi cho thấy, `v-else-if` đóng vai trò là một "khối else i
 </div>
 ```
 
-Cũng giống như `v-else`, một phần tử `v-else-if` phải ngay lập tức theo sau `v-if` hoặc một phần tử `v-else-if`.
+Tương tự `v-else`, một phần tử `v-else-if` phải theo ngay sau `v-if` hoặc `v-else-if`.
 
 ## `v-if` trên `<template>`
 
-Bởi vì `v-if` là một directive, nó chỉ được gắn với một phần tử duy nhất. Nhưng điều gì sẽ xảy ra nếu chúng ta muốn chuyển đổi nhiều hơn một phần tử? Trong trường hợp này chúng ta có thể sử dụng `v-if` trên một phần tử `<template>`, cái mà đóng vai trò như một bao bọc vô hình. Kết quả hiển thị cuối cùng sẽ không bao gồm phần tử `<template>`.
+Vì là một directive, `v-if` phải được gắn với một phần tử duy nhất. Nhưng nếu ta muốn kích hoạt nhiều hơn một phần tử thì sao? Trong trường hợp này, ta có thể sử dụng `v-if` trên một phần tử `<template>`, đóng vai trò như một khối bọc (wrapper) vô hình. Kết quả render cuối cùng sẽ không bao gồm phần tử `<template>`.
 
 ```vue-html
 <template v-if="ok">
@@ -80,19 +80,19 @@ Bởi vì `v-if` là một directive, nó chỉ được gắn với một phầ
 
 ## `v-show`
 
-Một lựa chọn khác cho hiển thị một phần tử có điều kiện đó là directive `v-show`. Cách sử dụng phần lớn là giống nhau:
+Một lựa chọn khác cho việc render một phần tử theo điều kiện là directive `v-show`. Cách sử dụng gần như hoàn toàn tương tự:
 
 ```vue-html
 <h1 v-show="ok">Hello!</h1>
 ```
 
-Sự khác nhau đó là một phần tử với `v-show` sẽ luôn hiển thị và ở trong DOM; `v-show` chỉ chuyển đổi thuộc tính CSS `display` của phần tử.
+Điểm khác nhau căn bản là một phần tử với `v-show` sẽ luôn được render và nằm trong DOM; `v-show` chỉ kích hoạt thuộc tính CSS `display` của phần tử.
 
-`v-show` không hỗ trợ phần tử `<template>`, `v-else` cũng vậy.
+`v-show` không hỗ trợ `<template>` và không hoạt động với `v-else`.
 
 ## `v-if` vs `v-show`
 
-`v-if` là hiển thị có điều kiện "thực(real)" vì nó đảm bảo rằng các xử lý sự kiện và các thành phần con bên trong khối điều kiện được hủy và tạo lại trong quá trình chuyển đổi.
+`v-if` là hiển thị có điều kiện "thật" vì nó đảm bảo các xử lý sự kiện và component con bên trong khối điều kiện bị hủy bỏ và tái tạo trong quá trình kích hoạt.
 
 Đồng thời, `v-if` cũng **lười biếng** (lazy): nếu điều kiện trả về giá trị sai (falsy) khi hiển thị lần đầu, nó sẽ không làm gì cả - khối điều kiện sẽ không được render cho đến khi điều kiện trở thành đúng lần đầu tiên.
 
