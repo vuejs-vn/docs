@@ -1,45 +1,45 @@
-# Template Syntax
+# Cú pháp template
 
-Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data. All Vue templates are syntactically valid HTML that can be parsed by spec-compliant browsers and HTML parsers.
+Vue sử dụng cú pháp template dựa trên HTML, cho phép bạn ràng buộc (bind) một cách minh bạch cấu trúc DOM được render với dữ liệu của đối tượng Vue bên dưới. Tất cả template của Vue đều là code HTML hợp lệ và có thể được parse những các trình duyệt và HTML parser tiểu chuẩn.
 
-Under the hood, Vue compiles the templates into highly-optimized JavaScript code. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
+Bên dưới, Vue biên dịch các template thành code JavaScript được tối ưu cao. Kết hợp với hệ thống reactivity (phản ứng), Vue có thể xác định một cách thông mình số lượng tối thiểu các component cần phải render lại, và áp dụng số lượng tối thiểu các thao tác về DOM khi trạng thái của ứng dụng thay đổi.
 
-If you are familiar with Virtual DOM concepts and prefer the raw power of JavaScript, you can also [directly write render functions](/guide/extras/render-function.html) instead of templates, with optional JSX support. However, do note that they do not enjoy the same level of compile-time optimizations as templates.
+Nếu bạn đã quen thuộc với khái niệm Virtual DOM và muốn sử dụng sức mạnh của JavaScript, bạn có thể [viết thẳng các hàm render](/guide/extras/render-function.html) cùng với JSX (không bắt buộc), thay vì sử dụng template. Tuy nhiên, hãy lưu ý rằng chúng (các hàm render) không thừa hưởng cùng mức độ tối ưu về thời gian biên dịch như template. 
 
-## Text Interpolation
+## Nội suy văn bản
 
-The most basic form of data binding is text interpolation using the "Mustache" syntax (double curly braces):
+Hình thức ràng buộc dữ liệu cơ bản nhất là nội suy văn bản (text interpolation) sử dụng cú pháp "Mustache" ("ria mép" - hai dấu ngoặc nhọn):
 
 ```vue-html
-<span>Message: {{ msg }}</span>
+<span>Thông điệp: {{ msg }}</span>
 ```
 
-The mustache tag will be replaced with the value of the `msg` property from the corresponding component instance. It will also be updated whenever the `msg` property changes.
+Thẻ mustache sẽ được thay thế bằng giá trị của thuộc tính `msg` từ component instance tương ứng, và cũng sẽ được cập nhật bất cứ khi nào thuộc tính này thay đổi.
 
-## Raw HTML
+## HTML thuần túy
 
-The double mustaches interprets the data as plain text, not HTML. In order to output real HTML, you will need to use the [`v-html` directive](/api/built-in-directives.html#v-html):
+Cú pháp mustache sẽ thông dịch dữ liệu thành văn bản thuần (plain text) chứ không phải HTML. Để xuất được HTML, bạn sẽ cần đến directive [`v-html`](/api/built-in-directives.html#v-html).
 
 ```vue-html
-<p>Using text interpolation: {{ rawHtml }}</p>
-<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+<p>Sử dụng nội suy văn bản: {{ rawHtml }}</p>
+<p>Sử dụng directive v-html: <span v-html="rawHtml"></span></p>
 ```
 
 <script setup>
-  const rawHtml = '<span style="color: red">This should be red.</span>'
+  const rawHtml = '<span style="color: red">Màu đỏ</span>'
 </script>
 
 <div class="demo">
-  <p>Using text interpolation: {{ rawHtml }}</p>
-  <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+  <p>Sử dụng nội suy văn bản: {{ rawHtml }}</p>
+  <p>Sử dụng directive v-html: <span v-html="rawHtml"></span></p>
 </div>
 
-Here we're encountering something new. The `v-html` attribute you're seeing is called a **directive**. Directives are prefixed with `v-` to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here, we're basically saying "keep this element's inner HTML up-to-date with the `rawHtml` property on the current active instance."
+Chúng ta bắt gặp điều gì mới ở đây. Đó là thuộc tính `v-html` mà bạn đang nhìn thấy ở trên được gọi là **directive**. Directive có tiền tố (prefix) là `v-` để chỉ ra rằng chúng là thuộc tính đặc biệt của Vue, và như bạn có thể đã đoán được, chúng áp dụng những hành vi reactive đặc biết đối với DOM được render. Về cơ bản chúng ta đang nói "giữ nguyên HTML bên trong phần tử này luôn được cập nhật với `rawHtml` trên instance hiện tại."
 
-The contents of the `span` will be replaced with the value of the `rawHtml` property, interpreted as plain HTML - data bindings are ignored. Note that you cannot use `v-html` to compose template partials, because Vue is not a string-based templating engine. Instead, components are preferred as the fundamental unit for UI reuse and composition.
-
-:::warning Security Warning
-Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to [XSS vulnerabilities](https://en.wikipedia.org/wiki/Cross-site_scripting). Only use `v-html` on trusted content and **never** on user-provided content.
+Nội dung bên trong `span` sẽ được thay thế bởi giá trị của thuộc tính `rawHhtml`, và được thông dịch thành HTML thuần - những ràng buộc dữ liệu sẽ bị bỏ qua. Chú ý rằng bạn không thể sử dụng `v-html` để biên soạn template partial, bởi vì Vue không phải là string-based template engine. Thay vào đó, component được xem là đơn vị nên tảng cho việc tái sử dụng và biên tập UI. 
+ 
+:::warning Cảnh báo bảo mật
+Render HTML động tùy tiện trên website của bạn có thể rất nguy hiểm vì nó dễ dàng dẫn đến [các lỗ hỏng XSS](https://en.wikipedia.org/wiki/Cross-site_scripting). Vì thế chỉ dùng `v-html` với các nội dung đáng tin tưởng, **đừng bao giờ** dùng với các nội dung được người dùng cung cấp. 
 :::
 
 ## Attribute Bindings
